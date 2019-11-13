@@ -122,6 +122,26 @@
           </li>
         </ul>
       </section>
+
+
+      <section class="editor">
+        <form action="https://echo.htmlacademy.ru" method="get" id="post">
+          <p class="editor__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <div class="editor__processing photo-processing">
+            <img class="photo-processing__image" src="#" width="280" height="374" alt="Фотография для обработки">
+            <div class="photo-processing__icons list-icons">
+              <button class="list-icons__filters" type="button"></button>
+              <button class="list-icons__filters" type="button"></button>
+              <button class="list-icons__filters" type="button"></button>
+            </div>
+            <input class="photo-processing__range" type="range" min="0" max="100" step="1" value="80" id="range__photo">
+            <button class="photo-processing__post" type="submit" form="post" name="post">Запостить</button>
+            <button class="photo-processing__cancel" type="reset" name="cancel">Отмена</button>
+          </div>
+        </form>
+      </section>
+
+
     </main>
 
     <footer class="page-footer">
