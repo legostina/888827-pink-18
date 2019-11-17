@@ -1,0 +1,84 @@
+$pink: #d22856;
+$grey: #f2f2f2;
+
+.page-footer {
+  width: 320px;
+  height: 284px;
+}
+
+.page-footer__logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  flex-direction: unset;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-top: 36px;
+}
+
+.social__item {
+  border: 3px solid $grey;
+  border-radius: 50px;
+}
+
+.social__item:first-of-type,
+.social__item:nth-last-of-type(2) {
+  margin-right: 15px;
+}
+
+.social__link {
+  display: flex;
+  width: 46px;
+  height: 46px;
+  font-size: 0;
+}
+
+.social__link.social__link--twitter {
+  background: url("/img/twitter.png") 15px 16px no-repeat;
+}
+
+.social__link.social__link--facebook {
+  background: url("/img/facebook.png") 19px 13px no-repeat;
+}
+
+.social__link.social__link--youtube {
+  background: url("/img/youtube.png") 18px 16px no-repeat;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: inherit;
+  padding: 40px 0;
+}
+
+a.button.copyright__link {
+  display: flex;
+  font-size: 0;
+  background: url("/img/logo-htmlacademy.svg");
+  width: 27px;
+  height: 34px;
+}
+
+.copyright__text {
+  width: 86px;
+  height: 15px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: left;
+  color: #283645;
+  margin-right: 15px;
+}

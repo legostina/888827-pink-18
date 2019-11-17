@@ -1,0 +1,26 @@
+@import "font";
+@import "blocks/header.scss";
+@import "blocks/product.scss";
+@import "blocks/download.scss";
+@import "blocks/advantages.scss";
+@import "blocks/contest.scss";
+@import "blocks/footer.scss";
+@import "blocks/attention.scss";
+@import "blocks/users.scss";
+@import "blocks/editor.scss";
+@import "blocks/reviews.scss";
+@import "blocks/rates.scss";
+@import "blocks/contacts.scss";
+
+$white: #ffffff;
+
+body {
+  font-family: "OpenSans", "Arial", sans-serif;
+  min-width: 320px;
+  margin: 0;
+  background: $white;
+}
+
+.visually-hidden {
+  display: none;
+}

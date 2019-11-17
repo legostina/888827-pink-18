@@ -1,0 +1,100 @@
+$grey: #f2f2f2;
+$black: #000000;
+$darkgrey: #dddfe0;
+$dark-blue: #283645;
+
+.editor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.editor form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editor__description {
+  width: 253px;
+  height: 90px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+  margin: 0;
+  padding-bottom: 48px;
+}
+
+.editor__processing.photo-processing {
+  width: 320px;
+  padding-top: 20px;
+  padding-bottom: 41px;
+  background-color: $grey;
+}
+
+.photo-processing__icons.list-icons {
+  padding-top: 38px;
+}
+
+.list-icons__filters {
+  border: none;
+}
+
+.list-icons__filters:first-of-type {
+  background: url("/img/crop-svg.svg");
+  width: 44px;
+  height: 44px;
+  margin-right: 34px;
+}
+
+.list-icons__filters:nth-of-type(2) {
+  background: url("/img/fill-svg.svg");
+  width: 48px;
+  height: 43px;
+  margin-right: 40px;
+}
+
+.list-icons__filters:last-of-type {
+  background: url("/img/contrastsvg.svg");
+  width: 32px;
+  height: 32px;
+}
+
+.photo-processing__range {
+  margin: 0;
+  width: 240px;
+  color: $black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.photo-processing__post,
+.photo-processing__cancel {
+  width: 280px;
+  border-radius: 50px;
+  background: none;
+  border: 3px solid $darkgrey;
+  padding: 14px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.photo-processing__post {
+  margin-bottom: 10px;
+  margin-top: 38px;
+  position: relative;
+}
+
+.photo-processing__post::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: -38px;
+  width: 100%;
+  border-top: 1px solid $darkgrey;
+}
