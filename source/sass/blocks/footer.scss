@@ -44,15 +44,15 @@ $grey: #f2f2f2;
 }
 
 .social__link.social__link--twitter {
-  background: url("/img/twitter.png") 15px 16px no-repeat;
+  background: url("../img/twitter.png") 15px 16px no-repeat;
 }
 
 .social__link.social__link--facebook {
-  background: url("/img/facebook.png") 19px 13px no-repeat;
+  background: url("../img/facebook.png") 19px 13px no-repeat;
 }
 
 .social__link.social__link--youtube {
-  background: url("/img/youtube.png") 18px 16px no-repeat;
+  background: url("../img/youtube.png") 18px 16px no-repeat;
 }
 
 .copyright {
@@ -67,7 +67,7 @@ $grey: #f2f2f2;
 a.button.copyright__link {
   display: flex;
   font-size: 0;
-  background: url("/img/logo-htmlacademy.svg");
+  background: url("../img/logo-htmlacademy.svg");
   width: 27px;
   height: 34px;
 }

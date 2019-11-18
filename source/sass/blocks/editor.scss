@@ -45,21 +45,21 @@ $dark-blue: #283645;
 }
 
 .list-icons__filters:first-of-type {
-  background: url("/img/crop-svg.svg");
+  background: url("../img/crop-svg.svg");
   width: 44px;
   height: 44px;
   margin-right: 34px;
 }
 
 .list-icons__filters:nth-of-type(2) {
-  background: url("/img/fill-svg.svg");
+  background: url("../img/fill-svg.svg");
   width: 48px;
   height: 43px;
   margin-right: 40px;
 }
 
 .list-icons__filters:last-of-type {
-  background: url("/img/contrastsvg.svg");
+  background: url("../img/contrastsvg.svg");
   width: 32px;
   height: 32px;
 }
