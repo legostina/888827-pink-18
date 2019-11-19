@@ -1,48 +1,9 @@
-@import "variables";
-
-.users .photo-list {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 320px;
-  list-style: none;
-  padding: 0;
-}
-
-.photo-item__hit-day {
-  width: 99px;
-  height: 12px;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 2;
-  text-transform: uppercase;
-  background-color: $pink;
-  color: $white;
-  padding: 6px 12px 18px 20px;
-  position: absolute;
-  right: 20px;
-}
-
-.photo-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
 .item-description {
   width: 280px;
   min-height: 85px;
   background-color: $grey;
   padding-top: 18px;
   padding-bottom: 20px;
-}
-
-.photo-item__link.item-link {
-  height: 137px;
 }
 
 .item-description__name,

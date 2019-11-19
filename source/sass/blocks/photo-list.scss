@@ -1,7 +1,10 @@
-.rates {
+.photo-list {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: $grey;
+  flex-wrap: wrap;
+  width: 320px;
+  list-style: none;
+  padding: 0;
 }

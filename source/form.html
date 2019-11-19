@@ -16,17 +16,17 @@
         <button class="main-nav__toggle--active" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list--active">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
+            <li class="site-list__item menu">
+              <a href="index.html" class="menu__link">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+            <li class="site-list__item menu">
+              <a href="photo.html" class="menu__link">Фотографии</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Конкурс</a>
+            <li class="site-list__item site-list__item--active menu">
+              <a class="menu__link">Конкурс</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Html Academy</a>
+            <li class="site-list__item menu">
+              <a href="#" class="menu__link">Html Academy</a>
             </li>
           </ul>
         </div>
@@ -38,34 +38,34 @@
         <h1 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
 
-      <section class="form">
+      <section class="history">
 
-        <form action="https://echo.htmlacademy.ru" method="post" id="form-users">
-          <div class="form__name user-name">
+        <form class="history__general general" action="https://echo.htmlacademy.ru" method="post" id="form-users">
+          <div class="general__name user-name">
             <p class="user-name__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-            <p class="user-name__input">
-              <label for="last-name">Фамилия:
-                <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *">
+            <p class="user-name__input general-input">
+              <label class="general-input__label" for="last-name">Фамилия:
+                <input class="general-input__input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *">
               </label>
             </p>
-            <p class="user-name__input">
-              <label for="first-name">Имя:
-                <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *">
+            <p class="user-name__input general-input">
+              <label class="general-input__label" for="first-name">Имя:
+                <input class="general-input__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *">
               </label>
             </p>
-            <p class="user-name__input">
-              <label for="fathers-name">Отчество:
-                <input type="text" name="fathers-name" id="fathers-name" placeholder="Ну и отчество тоже">
+            <p class="user-name__input general-input">
+              <label class="general-input__label" for="fathers-name">Отчество:
+                <input class="general-input__input" type="text" name="fathers-name" id="fathers-name" placeholder="Ну и отчество тоже">
               </label>
             </p>
-            <p class="user-name__telephone">
-              <label for="telephone">Номер телефона
-                <input type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+            <p class="user-name__input general-input">
+              <label class="general-input__label" for="telephone">Номер телефона
+                <input class="general-input__input" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
               </label>
             </p>
-            <p class="user-name__input">
-              <label for="mail">Адрес почты
-                <input type="email" name="mail" id="mail" placeholder="Введите почту *">
+            <p class="user-name__input general-input">
+              <label class="general-input__label" for="mail">Адрес почты
+                <input class="general-input__input" type="email" name="mail" id="mail" placeholder="Введите почту *">
               </label>
             </p>
           </div>

@@ -1,5 +1,3 @@
-@import "variables";
-
 .site-list {
   display: none;
 }
@@ -27,9 +25,4 @@
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.site-list__item a {
-  color: $white;
-  text-decoration: none;
 }
