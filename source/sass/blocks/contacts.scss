@@ -1,0 +1,26 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts::after {
+  content: "";
+  display: flex;
+  border: 160px solid transparent;
+  border-top: 54px solid $white;
+}
+
+.contacts__title {
+  width: 222px;
+  height: 48px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: $dark-blue;
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}

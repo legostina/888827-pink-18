@@ -1,0 +1,28 @@
+.download__button {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  font-family: "OpenSans", "Arial", sans-serif;
+  text-decoration: none;
+  width: 281px;
+  height: 55px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  color: $white;
+  border: 3px solid $white;
+  border-radius: 35px;
+  margin-top: 28px;
+}
+
+.download__description {
+  text-align: center;
+  color: $white;
+  width: 230px;
+  height: 37px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+}

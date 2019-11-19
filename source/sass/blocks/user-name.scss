@@ -1,0 +1,24 @@
+.user-name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-name__description {
+  width: 271px;
+  height: 87px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  color: $dark-blue;
+}
+
+.user-name__input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  text-align: left;
+  height: 87px;
+}

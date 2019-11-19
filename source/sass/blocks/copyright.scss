@@ -1,0 +1,27 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: inherit;
+  padding: 40px 0;
+}
+
+.copyright__link {
+  display: flex;
+  font-size: 0;
+  background: url("../img/logo-htmlacademy.svg");
+  width: 27px;
+  height: 34px;
+}
+
+.copyright__text {
+  width: 86px;
+  height: 15px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: left;
+  color: #283645;
+  margin-right: 15px;
+}

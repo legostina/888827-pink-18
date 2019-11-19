@@ -1,0 +1,41 @@
+.photo-processing {
+  width: 320px;
+  padding-top: 20px;
+  padding-bottom: 41px;
+  background-color: $grey;
+}
+
+.photo-processing__range {
+  margin: 0;
+  width: 240px;
+  color: $black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.photo-processing__post,
+.photo-processing__cancel {
+  width: 280px;
+  border-radius: 50px;
+  background: none;
+  border: 3px solid $darkgrey;
+  padding: 14px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.photo-processing__post {
+  margin-bottom: 10px;
+  margin-top: 38px;
+  position: relative;
+}
+
+.photo-processing__post::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: -38px;
+  width: 100%;
+  border-top: 1px solid $darkgrey;
+}

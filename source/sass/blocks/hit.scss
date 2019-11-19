@@ -1,0 +1,38 @@
+.hit {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 276px;
+  height: 94px;
+  background-color: $dark-blue;
+  background-image: url("../img/hit-ribbon.png");
+  background-repeat: no-repeat;
+  color: $white;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.hit__name {
+  width: 95px;
+  height: 17px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.hit__price {
+  width: 100px;
+  height: 21px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+}
