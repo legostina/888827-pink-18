@@ -11,3 +11,15 @@
   right: 20px;
   top: 24px;
 }
+
+.main-nav__toggle--active {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 24px;
+  font-size: 0;
+  height: 24px;
+  width: 28px;
+  background: #283645 url("../img/icon-menu-cross.svg") no-repeat;
+  border: none;
+}
