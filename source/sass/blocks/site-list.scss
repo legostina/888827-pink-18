@@ -1,0 +1,25 @@
+@import "variables";
+
+.site-list {
+  display: none;
+}
+
+.site-list__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  color: $white;
+  height: 63px;
+  border-bottom: 1px solid $black;
+  border-top: 1px solid $border-nav;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.site-list__item a {
+  color: $white;
+  text-decoration: none;
+}

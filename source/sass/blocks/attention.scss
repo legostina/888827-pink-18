@@ -1,3 +1,5 @@
+@import "variables";
+
 .attention {
   display: flex;
   justify-content: center;
@@ -13,5 +15,5 @@
   font-size: 14px;
   line-height: 2.14;
   text-align: center;
-  color: #283645;
+  color: $dark-blue;
 }

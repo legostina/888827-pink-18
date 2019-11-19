@@ -1,5 +1,4 @@
-$pink: #d22856;
-$grey: #f2f2f2;
+@import "variables";
 
 .page-footer {
   width: 320px;
@@ -64,7 +63,7 @@ $grey: #f2f2f2;
   padding: 40px 0;
 }
 
-a.button.copyright__link {
+.copyright__link {
   display: flex;
   font-size: 0;
   background: url("../img/logo-htmlacademy.svg");

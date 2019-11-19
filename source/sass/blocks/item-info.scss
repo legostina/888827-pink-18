@@ -1,0 +1,42 @@
+@import "variables";
+
+.item-info {
+  text-align: center;
+  width: 236px;
+  margin-bottom: 26px;
+}
+
+.item-info__act {
+  height: 14px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: $dark-blue;
+  margin: 0;
+  padding-bottom: 11px;
+}
+
+.item-info__telephone,
+.item-info__mail {
+  width: 204px;
+  height: 22px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: $pink;
+  text-decoration: none;
+  margin: 0;
+}
+
+.item-info__address {
+  width: 236px;
+  height: 50px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: $pink;
+  margin: 0;
+}

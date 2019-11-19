@@ -1,5 +1,4 @@
-$white: #ffffff;
-$down-blue: #1d2631;
+@import "variables";
 
 .product__download {
   width: 100%;
@@ -13,25 +12,20 @@ $down-blue: #1d2631;
 .download__button {
   display: flex;
   justify-content: center;
+  vertical-align: middle;
   align-items: center;
-  color: $white;
+  text-align: center;
+  font-family: "OpenSans", "Arial", sans-serif;
   text-decoration: none;
-  border: 3px solid $white;
-  border-radius: 35px;
   width: 281px;
   height: 55px;
-  margin-top: 28px;
-}
-
-.download__button span {
-  width: 202px;
-  height: 18px;
-  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
   line-height: 1;
+  color: $white;
+  border: 3px solid $white;
+  border-radius: 35px;
+  margin-top: 28px;
 }
 
 .download__description {
