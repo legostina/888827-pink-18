@@ -13,21 +13,30 @@
   margin-bottom: 30px;
 }
 
-.photo-processing__post,
+.photo-processing__post {
+  width: 280px;
+  border-radius: 50px;
+  background: none;
+  padding: 14px;
+  font-size: 18px;
+  line-height: 1;
+  border: 3px solid $pink;
+  color: $pink;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 38px;
+  position: relative;
+}
+
 .photo-processing__cancel {
   width: 280px;
   border-radius: 50px;
   background: none;
-  border: 3px solid $darkgrey;
   padding: 14px;
   font-size: 18px;
   line-height: 1;
-}
-
-.photo-processing__post {
-  margin-bottom: 10px;
-  margin-top: 38px;
-  position: relative;
+  border: 3px solid $darkgrey;
+  color: $darkgrey;
 }
 
 .photo-processing__post::before {

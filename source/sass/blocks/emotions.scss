@@ -1,0 +1,46 @@
+.emotions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.emotions__title {
+  width: 184px;
+  height: 29px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  text-align: center;
+  color: $pink;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.emotions__description {
+  width: 236px;
+  height: 157px;
+  border: solid 2px $border-input;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.67;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 52px;
+}
+
+.emotions__send {
+  width: 276px;
+  height: 59px;
+  border: solid 2px $green;
+  background-color: $green;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: center;
+}
