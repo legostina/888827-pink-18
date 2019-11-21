@@ -70,42 +70,72 @@
             </p>
           </div>
 
-          <div class="form__achievements achievements">
+          <div class="general__achievements achievements">
             <h3 class="achievements__title">Ваши безбашенные достижения в путешествии</h3>
-            <input type="checkbox" id="shark" name="shark" checked><label for="shark">Сделал селфи с акулой</label>
-            <input type="checkbox" id="tan" name="tan" checked><label for="tan">Обгорел на пляже</label>
-            <input type="checkbox" id="star" name="star"><label for="star">Видел Чака Норриса</label>
-            <input type="checkbox" id="souvenir" name="souvenir"><label for="souvenir">Накупил сувениров</label>
-            <input type="checkbox" id="tower" name="tower"><label for="tower">Удержал башню</label>
-            <input type="checkbox" id="hotel" name="hotel"><label for="hotel">Разгромил отель</label>
+            <ul class="achievements__item crazy">
+              <li class="crazy-trip trip">
+                <input class="trip__check" type="checkbox" id="shark" name="shark" checked>
+                <label class="trip__done" for="shark">Сделал селфи с акулой</label>
+              </li>
+              <li class="crazy-trip trip">
+                <input class="trip__check" type="checkbox" id="tan" name="tan" checked>
+                <label class="trip__done" for="tan">Обгорел на пляже</label>
+              </li>
+              <li class="crazy-trip trip">
+                <input class="trip__check" type="checkbox" id="star" name="star">
+                <label class="trip__done" for="star">Видел Чака Норриса</label>
+              </li>
+              <li class="crazy-trip trip">
+                <input class="trip__check" type="checkbox" id="souvenir" name="souvenir">
+                <label class="trip__done" for="souvenir">Накупил сувениров</label>
+              </li>
+              <li class="crazy-trip trip">
+                <input class="trip__check" type="checkbox" id="tower" name="tower" checked>
+                <label class="trip__done" for="tower">Удержал башню</label>
+              </li>
+              <li class="crazy-trip trip">
+                <input class="trip__check" type="checkbox" id="hotel" name="hotel">
+                <label class="trip__done" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
           </div>
 
-          <div class="form__mistake mistake">
+          <div class="general__mistake mistake">
             <h3 class="mistake__title">Что-то пошло не так!</h3>
             <p class="mistake__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             <button class="mistake__okay" type="button">Ок</button>
           </div>
 
-          <div class="form__app app">
+          <div class="general__app app">
             <h3 class="app__title">С каким приложением путешествовали?</h3>
-            <input type="radio" id="ios" name="app"><label for="ios">Pink для iOS</label>
-            <input type="radio" id="android" name="app"><label for="android">Pink на Android</label>
-            <input type="radio" id="windows" name="app"><label for="windows">Windows Phone</label>
+            <p class="app__choice">
+              <input type="radio" id="ios" name="app"><label for="ios">Pink для iOS</label>
+            </p>
+            <p class="app__choice">
+              <input type="radio" id="android" name="app"><label for="android">Pink на Android</label>
+            </p>
+            <p class="app__choice">
+              <input type="radio" id="windows" name="app"><label for="windows">Windows Phone</label>
+            </p>
           </div>
 
-          <div class="form__sent sent">
+          <div class="general__sent sent">
             <h3 class="sent__title">Ваша заявка отправлена</h3>
             <p class="sent__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-            <div class="sent__button">
-              <button type="button">Закрыть окно</button>
+            <div class="sent__button close-button">
+              <button class="close-button__window" type="button">Закрыть окно</button>
             </div>
           </div>
 
-          <div class="form__emotions emotions">
-            <h3 class="emotions__title">Опишите свои эмоции</h3>
-            <textarea name="emotions" form="form-users" autofocus>Можно прям в красках, не стесняясь в выражениях</textarea>
+          <div class="general__emotions emotions">
+            <label class="emotions__title" for="emotions">Опишите свои эмоции</label>
+            <textarea class="emotions__description" id="emotions" name="emotions" form="form-users" autofocus>Можно прям в красках, не стесняясь в выражениях</textarea>
             <button class="emotions__send" type="submit">Отправить форму</button>
           </div>
+
+          <p class="general__hint hint-square">
+            <span class="hint-square__color">* </span> — обязательные поля
+          </p>
         </form>
 
       </section>
