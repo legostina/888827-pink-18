@@ -1,0 +1,12 @@
+.container {
+  @media (min-width: $desktop-width) {
+    width: 80%;
+    margin-top: 40px;
+  }
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}

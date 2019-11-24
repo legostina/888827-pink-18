@@ -1,4 +1,8 @@
 .editor {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -7,6 +11,10 @@
 }
 
 .editor__form {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
   display: flex;
   justify-content: center;
   flex-direction: column;

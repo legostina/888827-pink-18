@@ -1,8 +1,19 @@
 .photo-processing {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
   width: 320px;
   padding-top: 20px;
   padding-bottom: 41px;
   background-color: $grey;
+}
+
+.photo-processing__image {
+  @media (min-width: $tablet-width) {
+    float: left;
+    margin-left: 20px;
+  }
 }
 
 .photo-processing__range {

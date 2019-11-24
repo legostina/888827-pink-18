@@ -1,4 +1,15 @@
+.main-nav {
+  @media (min-width: $desktop-width) {
+    height: 110px;
+    width: 100%;
+  }
+}
+
 .main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    top: 44px;
+  }
+
   display: flex;
   float: right;
   width: 50px;
@@ -11,6 +22,10 @@
 }
 
 .main-nav__toggle--active {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
   display: flex;
   position: absolute;
   right: 20px;

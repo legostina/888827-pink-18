@@ -1,4 +1,12 @@
 .contest {
+  @media (min-width: $tablet-width) {
+    height: 322px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 337px;
+  }
+
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -10,6 +18,18 @@
 }
 
 .contest__title {
+  @media (min-width: $tablet-width) {
+    width: 474px;
+    height: 211px;
+    font-size: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 747px;
+    height: 111px;
+    font-size: 50px;
+  }
+
   width: 228px;
   height: 82px;
   font-family: "OpenSans", "Arial", sans-serif;

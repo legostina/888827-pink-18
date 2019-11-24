@@ -7,6 +7,20 @@
 }
 
 .attention__title {
+  @media (min-width: $tablet-width) {
+    width: 438px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 571px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
   width: 245px;
   height: 87px;
   font-family: "OpenSans", "Arial", sans-serif;

@@ -1,4 +1,14 @@
 .product__header {
+  @media (min-width: $tablet-width) {
+    height: 692px;
+    background: url("../img/iphone-6-copy.png") -113px 148px no-repeat, url("../img/back-mobile-1-x-jpg.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 805px;
+    background: url("../img/iphone-6-copy.png") 240px 261px no-repeat, url("../img/back-mobile-1-x-jpg.png");
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +18,23 @@
 }
 
 .product__slogan {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 56px;
+    left: 68px;
+    width: 188px;
+    height: 126px;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 115px;
+    left: 170px;
+    width: 233px;
+    height: 157px;
+    font-size: 50px;
+  }
+
   color: $white;
   height: 67px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -25,10 +52,26 @@
 }
 
 .product__download {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 271px;
+    position: absolute;
+    top: 333px;
+    left: 20px;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 139px;
+    top: 433px;
+  }
+
   width: 100%;
   height: 271px;
   background-color: $down-blue;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }

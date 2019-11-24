@@ -1,10 +1,14 @@
 .photo-list {
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  width: 320px;
+  width: 100%;
   list-style: none;
   padding: 0;
 }

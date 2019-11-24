@@ -9,7 +9,7 @@
   text-transform: uppercase;
 }
 
-.general-input__input {
+.general-input__field {
   width: 276px;
   height: 55px;
   margin-top: 6px;
@@ -18,7 +18,7 @@
   border: 2px solid $border-input;
 }
 
-.general-input__input::placeholder {
+.general-input__field::placeholder {
   color: $dark-blue;
   padding-left: 20px;
 }

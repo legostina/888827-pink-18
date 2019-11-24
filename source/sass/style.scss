@@ -38,8 +38,12 @@
 @import "blocks/close-button.scss";
 @import "blocks/hint-square.scss";
 @import "blocks/type.scss";
-
-$white: #ffffff;
+@import "blocks/users.scss";
+@import "blocks/fact.scss";
+@import "blocks/effect.scss";
+@import "blocks/top-info.scss";
+@import "blocks/slider-bullets.scss";
+@import "blocks/container.scss";
 
 body {
   font-family: "OpenSans", "Arial", sans-serif;
