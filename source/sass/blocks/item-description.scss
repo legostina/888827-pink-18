@@ -4,6 +4,29 @@
   background-color: $grey;
   padding-top: 18px;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 117px;
+  }
+}
+
+.item-description--day {
+  width: 280px;
+  min-height: 85px;
+  background-color: $grey;
+  padding-top: 18px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .item-description__name,
@@ -26,6 +49,12 @@
   padding-left: 18px;
 }
 
+.item-description__name--day {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
 .item-description__date {
   text-transform: uppercase;
   font-size: 12px;
@@ -33,13 +62,43 @@
   padding-right: 18px;
 }
 
+.item-description__date--day {
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    margin-top: 3px;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 614px;
+  }
+}
+
 .item-description__comment {
+  padding: 0 18px;
+  margin-top: 5px;
+  font-weight: 300;
+  width: 224px;
+  max-height: 92px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    height: 44px;
+    order: 4;
+  }
+}
+
+.item-description__comment--day {
   padding: 0 18px;
   margin-top: 5px;
   font-weight: 300;
   width: 221px;
   max-height: 92px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .item-description__like {
@@ -53,6 +112,29 @@
   text-transform: uppercase;
   color: $pink;
   padding-left: 50px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+  }
+}
+
+.item-description__like--day {
+  position: relative;
+  width: 88px;
+  height: 9px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 2;
+  text-align: left;
+  text-transform: uppercase;
+  color: $pink;
+  padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 91px;
+    height: 20px;
+    order: 3;
+  }
 }
 
 .item-description__like::before {
@@ -64,4 +146,24 @@
   left: 18px;
   width: 13px;
   height: 12px;
+
+  @media (min-width: $desktop-width) {
+    left: 253px;
+  }
+}
+
+.item-description__like--day::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  background: url("../img/icon-heart-svg.svg");
+  top: 2px;
+  left: 18px;
+  width: 13px;
+  height: 12px;
+
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    left: 155px;
+  }
 }

@@ -1,3 +1,10 @@
+.main-nav {
+  @media (min-width: $desktop-width) {
+    height: 110px;
+    width: 100%;
+  }
+}
+
 .main-nav__toggle {
   display: flex;
   float: right;
@@ -8,6 +15,10 @@
   position: absolute;
   right: 20px;
   top: 24px;
+
+  @media (min-width: $tablet-width) {
+    top: 44px;
+  }
 }
 
 .main-nav__toggle--active {
@@ -20,4 +31,8 @@
   width: 28px;
   background: #283645 url("../img/icon-menu-cross.svg") no-repeat;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

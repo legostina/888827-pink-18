@@ -1,0 +1,19 @@
+.fact {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey;
+    padding-bottom: 70px;
+  }
+}
+
+.fact__hours {
+  margin-top: 50px;
+}

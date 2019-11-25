@@ -3,6 +3,17 @@
   padding-top: 20px;
   padding-bottom: 41px;
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.photo-processing__image {
+  @media (min-width: $tablet-width) {
+    float: left;
+    margin-left: 20px;
+  }
 }
 
 .photo-processing__range {

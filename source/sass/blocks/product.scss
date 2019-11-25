@@ -5,6 +5,17 @@
   width: 100%;
   height: 462px;
   background: url("../img/iphone-5-in-hand.png") -39px 175px no-repeat, url("../img/back-mobile-1-x-jpg.png");
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+    height: 692px;
+    background: url("../img/iphone-6-copy.png") -113px 148px no-repeat, url("../img/back-mobile-1-x-jpg.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 805px;
+    background: url("../img/iphone-6-copy.png") 240px 261px no-repeat, url("../img/back-mobile-1-x-jpg.png");
+  }
 }
 
 .product__slogan {
@@ -17,6 +28,21 @@
   width: 225px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 188px;
+    height: 126px;
+    font-size: 40px;
+    padding-top: 135px;
+    margin-left: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 233px;
+    height: 157px;
+    font-size: 50px;
+    margin-left: 167px;
+  }
 }
 
 .product__image {
@@ -31,4 +57,20 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 271px;
+    background: none;
+    margin-top: -356px;
+    padding-bottom: 100px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -430px;
+    margin-left: 130px;
+  }
 }

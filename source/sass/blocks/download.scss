@@ -15,6 +15,18 @@
   border: 3px solid $white;
   border-radius: 35px;
   margin-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 56px;
+    font-size: 21px;
+    line-height: 0.86;
+  }
 }
 
 .download__description {
@@ -25,4 +37,12 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
+
+  @media (min-width: $tablet-width) {
+    width: 295px;
+    height: 41px;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-top: 40px;
+  }
 }

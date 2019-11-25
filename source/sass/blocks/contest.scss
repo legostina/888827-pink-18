@@ -7,6 +7,14 @@
   height: 227px;
   background: url("../img/back-mobile-1-x-jpg.png");
   background-position-y: 456px;
+
+  @media (min-width: $tablet-width) {
+    height: 322px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 337px;
+  }
 }
 
 .contest__title {
@@ -19,4 +27,16 @@
   text-align: center;
   margin-top: 0;
   padding-top: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 474px;
+    height: 211px;
+    font-size: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 747px;
+    height: 111px;
+    font-size: 50px;
+  }
 }

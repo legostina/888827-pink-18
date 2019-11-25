@@ -18,4 +18,25 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin: 10px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 20px 10px;
+  }
+}
+
+.photo-item--day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }

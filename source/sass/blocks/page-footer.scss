@@ -1,6 +1,13 @@
 .page-footer {
-  width: 320px;
+  width: 100%;
   height: 284px;
+
+  @media (min-width: $tablet-width) {
+    height: 127px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: inherit;
+  }
 }
 
 .page-footer__logo {
@@ -10,4 +17,20 @@
   text-align: center;
   align-items: center;
   padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.page-footer--active {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    height: 127px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: inherit;
+    width: 100%;
+  }
 }
