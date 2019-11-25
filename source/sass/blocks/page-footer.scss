@@ -1,29 +1,31 @@
 .page-footer {
+  width: 100%;
+  height: 284px;
+
   @media (min-width: $tablet-width) {
     height: 127px;
     display: flex;
     justify-content: space-around;
     flex-direction: inherit;
   }
-
-  width: 100%;
-  height: 284px;
 }
 
 .page-footer__logo {
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-  }
-
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   align-items: center;
   padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .page-footer--active {
+  display: none;
+
   @media (min-width: $tablet-width) {
     height: 127px;
     display: flex;
@@ -31,6 +33,4 @@
     flex-direction: inherit;
     width: 100%;
   }
-
-  display: none;
 }

@@ -7,6 +7,14 @@
 }
 
 .attention__title {
+  width: 245px;
+  height: 87px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  color: $dark-blue;
+
   @media (min-width: $tablet-width) {
     width: 438px;
     height: 48px;
@@ -20,12 +28,4 @@
     font-size: 18px;
     line-height: 1.67;
   }
-
-  width: 245px;
-  height: 87px;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 2.14;
-  text-align: center;
-  color: $dark-blue;
 }

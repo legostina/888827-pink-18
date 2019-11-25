@@ -1,13 +1,4 @@
 .form__description {
-  @media (min-width: $tablet-width) {
-    width: 421px;
-    height: 62px;
-    font-size: 18px;
-    line-height: 1.67;
-    padding-top: 25px;
-    padding-bottom: 50px;
-  }
-
   width: 254px;
   height: 90px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -16,4 +7,13 @@
   color: $dark-blue;
   margin: 0;
   padding-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    width: 421px;
+    height: 62px;
+    font-size: 18px;
+    line-height: 1.67;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
 }

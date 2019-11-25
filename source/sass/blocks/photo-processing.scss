@@ -1,12 +1,12 @@
 .photo-processing {
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-
   width: 320px;
   padding-top: 20px;
   padding-bottom: 41px;
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .photo-processing__image {

@@ -13,12 +13,6 @@
 }
 
 .contacts__title {
-  @media (min-width: $tablet-width) {
-    width: 369px;
-    height: 78px;
-    font-size: 40px;
-  }
-
   width: 222px;
   height: 48px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -26,7 +20,11 @@
   font-weight: 300;
   text-align: center;
   color: $dark-blue;
-  margin: 0;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 35px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+    height: 78px;
+    font-size: 40px;
+  }
 }

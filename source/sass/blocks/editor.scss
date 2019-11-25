@@ -1,22 +1,22 @@
 .editor {
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
 
-.editor__form {
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+}
 
+.editor__form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

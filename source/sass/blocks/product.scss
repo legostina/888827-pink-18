@@ -1,5 +1,13 @@
 .product__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 462px;
+  background: url("../img/iphone-5-in-hand.png") -39px 175px no-repeat, url("../img/back-mobile-1-x-jpg.png");
+
   @media (min-width: $tablet-width) {
+    align-items: start;
     height: 692px;
     background: url("../img/iphone-6-copy.png") -113px 148px no-repeat, url("../img/back-mobile-1-x-jpg.png");
   }
@@ -8,33 +16,9 @@
     height: 805px;
     background: url("../img/iphone-6-copy.png") 240px 261px no-repeat, url("../img/back-mobile-1-x-jpg.png");
   }
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 462px;
-  background: url("../img/iphone-5-in-hand.png") -39px 175px no-repeat, url("../img/back-mobile-1-x-jpg.png");
 }
 
 .product__slogan {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 56px;
-    left: 68px;
-    width: 188px;
-    height: 126px;
-    font-size: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 115px;
-    left: 170px;
-    width: 233px;
-    height: 157px;
-    font-size: 50px;
-  }
-
   color: $white;
   height: 67px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -44,6 +28,21 @@
   width: 225px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 188px;
+    height: 126px;
+    font-size: 40px;
+    padding-top: 135px;
+    margin-left: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 233px;
+    height: 157px;
+    font-size: 50px;
+    margin-left: 167px;
+  }
 }
 
 .product__image {
@@ -52,20 +51,6 @@
 }
 
 .product__download {
-  @media (min-width: $tablet-width) {
-    width: 300px;
-    height: 271px;
-    position: absolute;
-    top: 333px;
-    left: 20px;
-    background: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 139px;
-    top: 433px;
-  }
-
   width: 100%;
   height: 271px;
   background-color: $down-blue;
@@ -74,4 +59,18 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 271px;
+    background: none;
+    margin-top: -356px;
+    padding-bottom: 100px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -430px;
+    margin-left: 130px;
+  }
 }

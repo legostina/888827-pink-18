@@ -1,9 +1,4 @@
 .effect {
-  @media (min-width: $desktop-width) {
-    width: 526px;
-    height: 197px;
-  }
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -11,39 +6,44 @@
   text-align: left;
   width: 296px;
   margin-top: 80px;
+
+  @media (min-width: $desktop-width) {
+    width: 526px;
+    height: 197px;
+  }
 }
 
 .effect__title {
-  @media (min-width: $desktop-width) {
-    width: 100%;
-  }
-
   width: 168px;
   font-size: 30px;
   line-height: 36px;
   color: black;
   font-weight: bold;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .effect__description {
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 30px;
-  }
-
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue;
-}
 
-.effect__link {
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
   }
+}
 
+.effect__link {
   font-size: 14px;
   line-height: 24px;
   color: $pink;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

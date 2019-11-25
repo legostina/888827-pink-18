@@ -1,4 +1,6 @@
 .fact {
+  display: none;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
@@ -10,8 +12,6 @@
     background-color: $grey;
     padding-bottom: 70px;
   }
-
-  display: none;
 }
 
 .fact__hours {

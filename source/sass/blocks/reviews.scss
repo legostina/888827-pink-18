@@ -7,13 +7,13 @@
 }
 
 .reviews::after {
-  @media (min-width: $tablet-width) {
-    border-left: 660px solid transparent;
-  }
-
   content: "";
   display: block;
   height: 0;
   border-bottom: 30px solid #f2f2f2;
   border-left: 320px solid transparent;
+
+  @media (min-width: $tablet-width) {
+    border-left: 660px solid transparent;
+  }
 }
