@@ -6,6 +6,16 @@
   background-color: $grey;
   padding-bottom: 40px;
   padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    padding: 0;
+    height: 166px;
+  }
 }
 
 .app__title {
@@ -18,14 +28,12 @@
   text-align: center;
   color: $pink;
   text-transform: uppercase;
-}
 
-.app__choice {
-  width: 172px;
-  height: 18px;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 1.67;
-  text-align: left;
-  margin-left: -4px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: -15px;
+    background-color: #ffffff;
+    z-index: 10;
+    width: 345px;
+    line-height: 30px;
+  }
 }

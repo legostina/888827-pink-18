@@ -1,10 +1,16 @@
-.general-input {
+.contacts-input {
   @media (min-width: $tablet-width) {
     width: 91%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 45%;
   }
 }
 
-.general-input__label {
+.contacts-input__label {
   width: 135px;
   height: 28px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -17,11 +23,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    margin-left: 40px;
     width: 96%;
+    order: 2;
   }
 }
 
-.general-input__field {
+.contacts-input__field {
   width: 276px;
   height: 55px;
   margin-top: 6px;
@@ -30,12 +38,13 @@
   border: 2px solid $border-input;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 90%;
     margin-left: 20px;
+    order: 1;
   }
 }
 
-.general-input__field::placeholder {
+.contacts-input__field::placeholder {
   color: $dark-blue;
   padding-left: 20px;
 }

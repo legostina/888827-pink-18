@@ -7,6 +7,10 @@
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 78%;
+  }
 }
 
 .photo-processing__image {
@@ -14,14 +18,6 @@
     float: left;
     margin-left: 20px;
   }
-}
-
-.photo-processing__range {
-  margin: 0;
-  width: 240px;
-  color: $black;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .photo-processing__post {
@@ -37,6 +33,11 @@
   margin-bottom: 10px;
   margin-top: 38px;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+    margin-right: 46px;
+  }
 }
 
 .photo-processing__cancel {
@@ -48,6 +49,10 @@
   line-height: 1;
   border: 3px solid $darkgrey;
   color: $darkgrey;
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
 }
 
 .photo-processing__post::before {

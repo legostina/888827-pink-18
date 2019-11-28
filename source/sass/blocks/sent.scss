@@ -3,6 +3,17 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+    margin-left: 100px;
+    box-shadow: #e8e8e8 2px 7px 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    margin-left: 0;
+  }
 }
 
 .sent__title {
@@ -12,6 +23,16 @@
   color: #000000;
   line-height: 24px;
   margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 218px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 402px;
+  }
 }
 
 .sent__description {
@@ -22,4 +43,20 @@
   color: #283645;
   line-height: 24px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 306px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 378px;
+  }
+}
+
+.sent__button:last-of-type {
+  @media (min-width: $tablet-width) {
+    background-color: $grey;
+  }
 }
