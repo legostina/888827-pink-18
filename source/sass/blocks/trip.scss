@@ -1,5 +1,13 @@
 .trip {
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 259px;
+  }
 }
 
 .trip__done {
@@ -10,4 +18,40 @@
   line-height: 1.67;
   text-align: left;
   color: $dark-blue;
+}
+
+.trip:first-of-type {
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.trip:nth-of-type(2) {
+  @media (min-width: $desktop-width) {
+    order: 4;
+  }
+}
+
+.trip:nth-of-type(3) {
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.trip:nth-of-type(4) {
+  @media (min-width: $desktop-width) {
+    order: 5;
+  }
+}
+
+.trip:nth-of-type(5) {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.trip:nth-of-type(6) {
+  @media (min-width: $desktop-width) {
+    order: 6;
+  }
 }

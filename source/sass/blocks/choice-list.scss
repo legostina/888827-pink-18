@@ -1,0 +1,21 @@
+.choice-list {
+  @media (min-width: $tablet-width) {
+    width: 91%;
+    border: 2px solid #e5e5e5;
+    padding: 40px 0 20px 0;
+  }
+}
+
+.choice-list__item {
+  width: 172px;
+  height: 18px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: left;
+  margin-left: -4px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
+}

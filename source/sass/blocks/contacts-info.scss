@@ -1,0 +1,29 @@
+.contacts-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.contacts-info__title {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 223px;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    align-items: center;
+    color: $pink;
+    text-transform: uppercase;
+    margin-bottom: -15px;
+    background-color: #ffffff;
+    z-index: 10;
+  }
+}

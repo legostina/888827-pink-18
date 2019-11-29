@@ -41,8 +41,11 @@
       <section class="history">
 
         <form class="history__general general" action="https://echo.htmlacademy.ru" method="post" id="form-users">
+          <div class="general__title user-title">
+            <p class="user-title__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+          </div>
+
           <div class="general__name user-name">
-            <p class="user-name__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
             <p class="user-name__input general-input">
               <label class="general-input__label" for="last-name">Фамилия:
                 <input class="general-input__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *">
@@ -58,16 +61,35 @@
                 <input class="general-input__field" type="text" name="fathers-name" id="fathers-name" placeholder="Ну и отчество тоже">
               </label>
             </p>
-            <p class="user-name__input general-input">
-              <label class="general-input__label" for="telephone">Номер телефона
-                <input class="general-input__field" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
-              </label>
-            </p>
-            <p class="user-name__input general-input">
-              <label class="general-input__label" for="mail">Адрес почты
-                <input class="general-input__field" type="email" name="mail" id="mail" placeholder="Введите почту *">
-              </label>
-            </p>
+          </div>
+
+          <div class="general__app app">
+            <h3 class="app__title">С каким приложением путешествовали?</h3>
+            <div class="app__choice choice-list">
+              <p class="choice-list__item">
+                <input type="radio" id="ios" name="app"><label for="ios">Pink для iOS</label>
+              </p>
+              <p class="choice-list__item">
+                <input type="radio" id="android" name="app"><label for="android">Pink на Android</label>
+              </p>
+              <p class="choice-list__item">
+                <input type="radio" id="windows" name="app"><label for="windows">Windows Phone</label>
+              </p>
+            </div>
+          </div>
+
+          <div class="general__contacts contacts-info">
+            <h3 class="contacts-info__title">Контактная информация</h3>
+            <div class="contacts-info__field user-field">
+              <p class="user-field__input contacts-input">
+                <label class="contacts-input__label" for="telephone">Номер телефона</label>
+                <input class="contacts-input__field" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="user-field__input contacts-input">
+                <label class="contacts-input__label" for="mail">Адрес почты</label>
+                <input class="contacts-input__field" type="email" name="mail" id="mail" placeholder="Введите почту *">
+              </p>
+            </div>
           </div>
 
           <div class="general__achievements achievements">
@@ -103,20 +125,9 @@
           <div class="general__mistake mistake">
             <h3 class="mistake__title">Что-то пошло не так!</h3>
             <p class="mistake__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            <button class="mistake__okay" type="button">Ок</button>
-          </div>
-
-          <div class="general__app app">
-            <h3 class="app__title">С каким приложением путешествовали?</h3>
-            <p class="app__choice">
-              <input type="radio" id="ios" name="app"><label for="ios">Pink для iOS</label>
-            </p>
-            <p class="app__choice">
-              <input type="radio" id="android" name="app"><label for="android">Pink на Android</label>
-            </p>
-            <p class="app__choice">
-              <input type="radio" id="windows" name="app"><label for="windows">Windows Phone</label>
-            </p>
+            <div class="mistake__button close-button">
+              <button class="mistake__okay" type="button">Ок</button>
+            </div>
           </div>
 
           <div class="general__sent sent">
@@ -130,12 +141,14 @@
           <div class="general__emotions emotions">
             <label class="emotions__title" for="emotions">Опишите свои эмоции</label>
             <textarea class="emotions__description" id="emotions" name="emotions" form="form-users" autofocus>Можно прям в красках, не стесняясь в выражениях</textarea>
-            <button class="emotions__send" type="submit">Отправить форму</button>
           </div>
 
-          <p class="general__hint hint-square">
-            <span class="hint-square__color">* </span> — обязательные поля
-          </p>
+          <div class="general__bottom bottom-form">
+            <button class="bottom-form__send" type="submit">Отправить форму</button>
+            <p class="bottom-form__hint hint-square">
+              <span class="hint-square__color">* </span> — обязательные поля
+            </p>
+          </div>
         </form>
 
       </section>

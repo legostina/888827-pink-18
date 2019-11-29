@@ -1,0 +1,31 @@
+.user-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.user-title__description {
+  width: 273px;
+  height: 87px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  color: $dark-blue;
+  margin-top: 40px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 490px;
+    height: 94px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 756px;
+  }
+}
