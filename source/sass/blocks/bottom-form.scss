@@ -7,7 +7,9 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    display: flex;
+    width: 95%;
   }
 
   @media (min-width: $desktop-width) {

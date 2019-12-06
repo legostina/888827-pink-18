@@ -1,0 +1,7 @@
+.top-header {
+  border-bottom: 1px solid $black;
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
+}

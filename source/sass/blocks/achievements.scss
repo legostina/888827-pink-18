@@ -4,13 +4,20 @@
   flex-direction: column;
   align-items: center;
   background-color: $grey;
+  margin: 0;
+  border: none;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    width: 91%;
+    border: 2px solid $border-input;
+    padding: 40px 0 20px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -24,7 +31,8 @@
   text-align: center;
   color: $pink;
   text-transform: uppercase;
-  padding-top: 20px;
+  position: relative;
+  top: 25px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: -33px;
@@ -32,10 +40,13 @@
     z-index: 10;
     width: 420px;
     line-height: 30px;
+    top: 0;
   }
 }
 
 .achievements__item {
   list-style: none;
   padding: 0;
+  text-align: left;
+  margin-top: 50px;
 }

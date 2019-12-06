@@ -9,9 +9,11 @@
   <body>
 
     <header class="page-header--active">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-white-mobile.svg" width="75" height="22" alt="Пинк">
-      </a>
+      <div class="page-header__top top-header">
+        <a class="top-header page-header__logo">
+          <img class="page-header__logo-image" src="img/logotype-white-mobile.svg" width="75" height="22" alt="Пинк">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle--active" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -63,37 +65,35 @@
             </p>
           </div>
 
-          <div class="general__app app">
-            <h3 class="app__title">С каким приложением путешествовали?</h3>
-            <div class="app__choice choice-list">
-              <p class="choice-list__item">
-                <input type="radio" id="ios" name="app"><label for="ios">Pink для iOS</label>
-              </p>
-              <p class="choice-list__item">
-                <input type="radio" id="android" name="app"><label for="android">Pink на Android</label>
-              </p>
-              <p class="choice-list__item">
-                <input type="radio" id="windows" name="app"><label for="windows">Windows Phone</label>
-              </p>
-            </div>
-          </div>
+          <fieldset class="general__app app">
+            <legend class="app__title">С каким приложением путешествовали?</legend>
+            <p class="app__item">
+              <input type="radio" id="ios" name="app"><label for="ios">Pink для iOS</label>
+            </p>
+            <p class="app__item">
+              <input type="radio" id="android" name="app"><label for="android">Pink на Android</label>
+            </p>
+            <p class="app__item">
+              <input type="radio" id="windows" name="app"><label for="windows">Windows Phone</label>
+            </p>
+          </fieldset>
 
-          <div class="general__contacts contacts-info">
-            <h3 class="contacts-info__title">Контактная информация</h3>
-            <div class="contacts-info__field user-field">
-              <p class="user-field__input contacts-input">
+          <fieldset class="general__contacts contacts-info">
+            <legend class="contacts-info__title">Контактная информация</legend>
+            <div class="contacts-info__enter contacts-container">
+              <p class="contacts-container__input contacts-input">
                 <label class="contacts-input__label" for="telephone">Номер телефона</label>
                 <input class="contacts-input__field" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
               </p>
-              <p class="user-field__input contacts-input">
+              <p class="contacts-container__input contacts-input">
                 <label class="contacts-input__label" for="mail">Адрес почты</label>
                 <input class="contacts-input__field" type="email" name="mail" id="mail" placeholder="Введите почту *">
               </p>
             </div>
-          </div>
+          </fieldset>
 
-          <div class="general__achievements achievements">
-            <h3 class="achievements__title">Ваши безбашенные достижения в путешествии</h3>
+          <fieldset class="general__achievements achievements">
+            <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="achievements__item crazy">
               <li class="crazy-trip trip">
                 <input class="trip__check" type="checkbox" id="shark" name="shark" checked>
@@ -120,7 +120,7 @@
                 <label class="trip__done" for="hotel">Разгромил отель</label>
               </li>
             </ul>
-          </div>
+          </fieldset>
 
           <div class="general__mistake mistake">
             <h3 class="mistake__title">Что-то пошло не так!</h3>
@@ -138,10 +138,12 @@
             </div>
           </div>
 
-          <div class="general__emotions emotions">
-            <label class="emotions__title" for="emotions">Опишите свои эмоции</label>
+          <fieldset class="general__emotions emotions">
+            <legend class="emotions__title title-name">
+              <label class="title-name__field" for="emotions">Опишите свои эмоции</label>
+            </legend>
             <textarea class="emotions__description" id="emotions" name="emotions" form="form-users" autofocus>Можно прям в красках, не стесняясь в выражениях</textarea>
-          </div>
+          </fieldset>
 
           <div class="general__bottom bottom-form">
             <button class="bottom-form__send" type="submit">Отправить форму</button>
