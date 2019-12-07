@@ -51,7 +51,13 @@
 @import "blocks/contacts-input.scss";
 @import "blocks/title-name.scss";
 @import "blocks/contacts-container.scss";
-@import "blocks/top-header.scss";
+@import "blocks/filter-crop.scss";
+@import "blocks/filter-fill.scss";
+@import "blocks/filter-contrast.scss";
+@import "blocks/list-effects.scss";
+@import "blocks/range-crop.scss";
+@import "blocks/range-fill.scss";
+@import "blocks/range-contrast.scss";
 
 body {
   font-family: "OpenSans", "Arial", sans-serif;

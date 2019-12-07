@@ -1,0 +1,15 @@
+.range-fill {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    color: $black;
+    margin: 30px 0;
+    order: 0;
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 402px;
+  }
+}

@@ -34,7 +34,7 @@
 }
 
 .top-info__description {
-  width: 276px;
+  width: 88%;
   height: 165px;
   font-size: 14px;
   line-height: 2.14;
@@ -42,7 +42,7 @@
   color: $dark-blue;
 
   @media (min-width: $tablet-width) {
-    width: 620px;
+    width: 95%;
     height: 79px;
     font-size: 18px;
     line-height: 1.67;

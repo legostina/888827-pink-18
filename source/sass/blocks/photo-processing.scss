@@ -1,12 +1,8 @@
 .photo-processing {
-  width: 320px;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 41px;
   background-color: $grey;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
 
   @media (min-width: $desktop-width) {
     width: 78%;
@@ -21,7 +17,7 @@
 }
 
 .photo-processing__post {
-  width: 280px;
+  width: 87.5%;
   border-radius: 50px;
   background: none;
   padding: 14px;
@@ -34,6 +30,10 @@
   margin-top: 38px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    width: 39%;
+  }
+
   @media (min-width: $desktop-width) {
     width: 183px;
     margin-right: 46px;
@@ -41,7 +41,7 @@
 }
 
 .photo-processing__cancel {
-  width: 280px;
+  width: 87.5%;
   border-radius: 50px;
   background: none;
   padding: 14px;
@@ -50,17 +50,11 @@
   border: 3px solid $darkgrey;
   color: $darkgrey;
 
+  @media (min-width: $tablet-width) {
+    width: 39%;
+  }
+
   @media (min-width: $desktop-width) {
     width: 183px;
   }
-}
-
-.photo-processing__post::before {
-  content: "";
-  display: flex;
-  position: absolute;
-  left: 0;
-  top: -38px;
-  width: 100%;
-  border-top: 1px solid $darkgrey;
 }
