@@ -45,13 +45,20 @@
 @import "blocks/slider-bullets.scss";
 @import "blocks/container.scss";
 @import "blocks/general.scss";
-@import "blocks/crazy.scss";
 @import "blocks/bottom-form.scss";
-@import "blocks/choice-list.scss";
-@import "blocks/user-field.scss";
 @import "blocks/contacts-info.scss";
 @import "blocks/user-title.scss";
 @import "blocks/contacts-input.scss";
+@import "blocks/title-name.scss";
+@import "blocks/contacts-container.scss";
+@import "blocks/filter-crop.scss";
+@import "blocks/filter-fill.scss";
+@import "blocks/filter-contrast.scss";
+@import "blocks/list-effects.scss";
+@import "blocks/range-crop.scss";
+@import "blocks/range-fill.scss";
+@import "blocks/range-contrast.scss";
+@import "blocks/top-block.scss";
 
 body {
   font-family: "OpenSans", "Arial", sans-serif;

@@ -1,4 +1,19 @@
 .menu__link {
   color: $white;
   text-decoration: none;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: $pink;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:active {
+      color: $translucent;
+    }
+  }
 }

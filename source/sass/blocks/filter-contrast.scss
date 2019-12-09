@@ -1,0 +1,9 @@
+.filter-contrast {
+  background: url("../img/contrastsvg.svg");
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 48px;
+  }
+}

@@ -11,6 +11,7 @@
 }
 
 .contacts-input__label {
+  display: flex;
   width: 135px;
   height: 28px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -19,9 +20,9 @@
   text-align: left;
   color: $pink;
   text-transform: uppercase;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     align-items: center;
     margin-left: 40px;
     width: 96%;

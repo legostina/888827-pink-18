@@ -7,7 +7,9 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    display: flex;
+    width: 95%;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,4 +29,19 @@
   font-weight: bold;
   line-height: 1.67;
   text-align: center;
+
+  &:hover {
+    background-color: $viridian;
+    border-color: $viridian;
+  }
+
+  &:active {
+    color: $translucent;
+  }
+
+  &:disabled {
+    background-color: $border-input;
+    border-color: $border-input;
+    color: $white;
+  }
 }

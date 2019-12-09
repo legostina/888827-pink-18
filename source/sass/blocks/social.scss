@@ -12,6 +12,14 @@
 .social__item {
   border: 3px solid $grey;
   border-radius: 50px;
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .social__link {

@@ -1,0 +1,28 @@
+.title-name {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 240px;
+  }
+}
+
+.title-name__field {
+  width: 184px;
+  height: 29px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  text-align: center;
+  color: $pink;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -15px;
+    z-index: 10;
+    width: 220px;
+  }
+}
