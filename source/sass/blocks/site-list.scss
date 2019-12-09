@@ -1,8 +1,4 @@
-//.site-list {
-//  display: none;
-//}
-
-.site-list--active {
+.site-list {
   display: flex;
   list-style: none;
   width: 100%;
@@ -40,6 +36,21 @@
     font-weight: normal;
     line-height: 1;
     text-align: left;
+    text-transform: none;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 52px;
+        left: -6px;
+        height: 2px;
+        width: 100%;
+        background: $darkgrey;
+      }
+    }
   }
 }
 
@@ -64,15 +75,5 @@
 .site-list__item:last-of-type {
   @media (min-width: $desktop-width) {
     width: 143px;
-  }
-}
-
-.site-list__item--active::after {
-  @media (min-width: $desktop-width) {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 100%;
-    color: $darkgrey;
   }
 }

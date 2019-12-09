@@ -30,6 +30,15 @@
   margin-top: 38px;
   position: relative;
 
+  &:hover {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &:active {
+    color: $translucent;
+  }
+
   @media (min-width: $tablet-width) {
     width: 39%;
   }
@@ -49,6 +58,17 @@
   line-height: 1;
   border: 3px solid $darkgrey;
   color: $darkgrey;
+
+  &:hover {
+    color: $dark-blue;
+    border-color: $dark-blue;
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: $translucent;
+    background-color: $dark-blue;
+  }
 
   @media (min-width: $tablet-width) {
     width: 39%;

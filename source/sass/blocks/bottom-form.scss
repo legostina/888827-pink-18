@@ -29,4 +29,19 @@
   font-weight: bold;
   line-height: 1.67;
   text-align: center;
+
+  &:hover {
+    background-color: $viridian;
+    border-color: $viridian;
+  }
+
+  &:active {
+    color: $translucent;
+  }
+
+  &:disabled {
+    background-color: $border-input;
+    border-color: $border-input;
+    color: $white;
+  }
 }

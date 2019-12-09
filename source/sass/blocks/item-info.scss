@@ -26,6 +26,16 @@
   color: $pink;
   text-decoration: none;
   margin: 0;
+
+  &:hover {
+    color: $dark-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.4;
+    text-decoration: none;
+  }
 }
 
 .item-info__address {
@@ -37,4 +47,14 @@
   text-align: center;
   color: $pink;
   margin: 0;
+
+  &:hover {
+    color: $dark-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.4;
+    text-decoration: none;
+  }
 }

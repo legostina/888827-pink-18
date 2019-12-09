@@ -29,6 +29,14 @@
   font-size: 18px;
   border: 2px solid $border-input;
 
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-left: 20px;

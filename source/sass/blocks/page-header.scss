@@ -5,9 +5,20 @@
   width: 100%;
   min-height: 66px;
   background-color: $dark-blue;
+  opacity: 1;
 
   @media (min-width: $tablet-width) {
     min-height: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 110px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    width: 100%;
   }
 }
 
@@ -21,6 +32,10 @@
   @media (min-width: $tablet-width) {
     height: 110px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+  }
 }
 
 .page-header__logo-image {
@@ -28,20 +43,4 @@
   height: 22px;
   object-fit: contain;
   margin-left: 20px;
-}
-
-.page-header--active {
-  background-color: $dark-blue;
-  opacity: 1;
-  height: 325px;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    height: 110px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border: none;
-    width: 100%;
-  }
 }

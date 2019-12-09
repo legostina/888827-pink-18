@@ -17,6 +17,16 @@
   margin-top: 28px;
   margin-bottom: 28px;
 
+  &:hover {
+    color: $pink;
+    background: $white;
+  }
+
+  &:active {
+    color: $pink-down;
+    background: $white;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
     margin-top: 0;
