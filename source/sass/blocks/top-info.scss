@@ -42,9 +42,13 @@
   color: $dark-blue;
 
   @media (min-width: $tablet-width) {
-    width: 95%;
+    width: 620px;
     height: 79px;
     font-size: 18px;
     line-height: 1.67;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 689px;
   }
 }

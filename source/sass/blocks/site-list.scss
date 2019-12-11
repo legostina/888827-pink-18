@@ -9,10 +9,10 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    height: 110px;
+    min-height: 110px;
   }
 }
 
@@ -32,6 +32,7 @@
 
   @media (min-width: $desktop-width) {
     border: none;
+    width: 129px;
     font-size: 18px;
     font-weight: normal;
     line-height: 1;
