@@ -12,7 +12,11 @@
       <nav class="main-nav">
         <div class="main-nav__top top-block">
           <a class="top-block page-header__logo">
-            <img class="page-header__logo-image" src="img/logotype-white-mobile.svg" width="75" height="22" alt="Пинк">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/logotype-white-desktop.svg">
+              <source media="(min-width:660px)" srcset="img/logotype-white-tablet.svg">
+              <img class="page-header__logo-image" src="img/logotype-white-mobile.svg" width="75" height="22" alt="Пинк">
+            </picture>
           </a>
           <button class="top-block main-nav__toggle" type="button">
             <span class="visually-hidden">Закрыть меню</span>
@@ -43,7 +47,11 @@
         <header class="product__header">
           <h2 class="visually-hidden">Приложение Пинк</h2>
           <p class="product__slogan">Взгляните на жизнь иначе!</p>
-<!--          <img class="product__image" src="img/iphone-5-in-hand.png" width="320" height="314" alt="Приложение Пинк на телефоне">-->
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/iphone-6.png">
+            <source media="(min-width:660px)" srcset="img/iphone-6-copy.png">
+            <img class="product__image" src="img/iphone-5-in-hand-png.png" width="498" height="314" alt="Приложение Пинк на телефоне">
+          </picture>
         </header>
         <div class="product__download download">
           <a class="download__button" href="#">Скачать приложение</a>
@@ -148,7 +156,11 @@
 
     <footer class="page-footer--active">
       <a class="page-footer__logo">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/logotype-blue-desktop.svg">
+          <source media="(min-width:660px)" srcset="img/logotype-blue-tablet-svg.svg">
         <img class="page-footer__logo-image" src="img/logotype-blue-tablet-svg.svg" width="146" height="40" alt="Пинк">
+        </picture>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">

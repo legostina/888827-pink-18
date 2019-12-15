@@ -42,4 +42,9 @@
   height: 22px;
   object-fit: contain;
   margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 147px;
+    height: 40px;
+  }
 }

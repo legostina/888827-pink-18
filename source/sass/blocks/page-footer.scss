@@ -23,6 +23,17 @@
   }
 }
 
+.page-footer__logo-image {
+  width: 75px;
+  height: 22px;
+  object-fit: contain;
+
+  @media (min-width: $tablet-width) {
+    width: 147px;
+    height: 40px;
+  }
+}
+
 .page-footer--active {
   display: none;
 

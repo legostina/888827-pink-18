@@ -12,7 +12,11 @@
       <nav class="main-nav">
         <div class="main-nav__top top-block">
           <a class="top-block page-header__logo">
-            <img class="page-header__logo-image" src="img/logotype-white-mobile.svg" width="75" height="22" alt="Пинк">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/logotype-white-desktop.svg">
+              <source media="(min-width:660px)" srcset="img/logotype-white-tablet.svg">
+              <img class="page-header__logo-image" src="img/logotype-white-mobile.svg" width="75" height="22" alt="Пинк">
+            </picture>
           </a>
           <button class="top-block main-nav__toggle" type="button">
             <span class="visually-hidden">Закрыть меню</span>
@@ -51,8 +55,12 @@
         <ul class="users__list photo-list">
           <li class="photo-list__item photo-item photo-item--day">
             <span class="photo-item__hit-day">Панорама дня</span>
-            <a class="photo-item__link item-link" href="#">
-              <img class="item-link__image item-link__image--day" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама Анны">
+            <a class="photo-item__link item-link--day" href="#">
+              <picture>
+                <source media="(min-width:1200px)" srcset="img/panorama-desktop-jpg.jpg 1x, img/panorama-desktop-jpg@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/panorama-tablet-jpg.jpg 1x, img/panorama-tablet-jpg@2x.jpg 2x">
+                <img class="item-link__image item-link__image--day" src="img/panorama-mobile-jpg.jpg" srcset="img/panorama-mobile-jpg@2x.jpg 2x" width="320" height="137" alt="Панорама Анны">
+              </picture>
             </a>
             <div class="photo-item__description item-description item-description--day">
               <p class="item-description__name item-description__name--day">Анна</p>
@@ -63,7 +71,11 @@
           </li>
           <li class="photo-list__item photo-item">
             <a class="photo-item__link item-link" href="#">
-              <img class="item-link__image" src="img/photo-1-mobile-jpg.jpg" width="280" height="180" alt="Панорама Левона">
+              <picture>
+                <source media="(min-width:1200px)" srcset="img/photo-1-desktop-jpg.jpg 1x, img/photo-1-desktop-jpg@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/photo-1-tablet-jpg.jpg 1x, img/photo-1-tablet-jpg@2x.jpg 2x">
+                <img class="item-link__image" src="img/photo-1-mobile-jpg.jpg" srcset="img/photo-1-desktop-jpg@2x.jpg 2x" width="280" height="180" alt="Панорама Левона">
+              </picture>
             </a>
             <div class="photo-item__description item-description">
               <p class="item-description__name">Левон</p>
@@ -74,7 +86,11 @@
           </li>
           <li class="photo-list__item photo-item">
             <a class="photo-item__link item-link" href="#">
-              <img class="item-link__image" src="img/photo-2-mobile-jpg.jpg" width="280" height="180" alt="Панорама Антона">
+              <picture>
+                <source media="(min-width:1200px)" srcset="img/photo-2-desktop-jpg.jpg 1x, img/photo-2-desktop-jpg@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/photo-2-tablet-jpg.jpg 1x, img/photo-2-tablet-jpg@2x.jpg 2x">
+                <img class="item-link__image" src="img/photo-2-mobile-jpg.jpg" srcset="img/photo-2-desktop-jpg@2x.jpg 2x" width="280" height="180" alt="Панорама Антона">
+              </picture>
             </a>
             <div class="photo-item__description item-description">
               <p class="item-description__name">Антон</p>
@@ -85,7 +101,11 @@
           </li>
           <li class="photo-list__item photo-item">
             <a class="photo-item__link item-link" href="#">
-              <img class="item-link__image" src="img/photo-3-mobile-jpg.jpg" width="280" height="180" alt="Панорама Бориса">
+              <picture>
+                <source media="(min-width:1200px)" srcset="img/photo-3-desktop-jpg.jpg 1x, img/photo-3-desktop-jpg@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/photo-3-tablet-jpg.jpg 1x, img/photo-3-tablet-jpg@2x.jpg 2x">
+              <img class="item-link__image" src="img/photo-3-mobile-jpg.jpg" srcset="img/photo-3-desktop-jpg@2x.jpg 2x" width="280" height="180" alt="Панорама Бориса">
+              </picture>
             </a>
             <div class="photo-list__description item-description">
               <p class="item-description__name">Борис</p>
@@ -96,7 +116,11 @@
           </li>
           <li class="photo-list__item photo-item">
             <a class="photo-item__link item-link" href="#">
-              <img class="item-link__image" src="img/photo-4-mobile-jpg.jpg" width="280" height="180" alt="Панорама Сергея">
+              <picture>
+                <source media="(min-width:1200px)" srcset="img/photo-4-desktop-jpg.jpg 1x, img/photo-4-desktop-jpg@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/photo-4-tablet-jpg.jpg 1x, img/photo-4-tablet-jpg@2x.jpg 2x">
+                <img class="item-link__image" src="img/photo-4-mobile-jpg.jpg" srcset="img/photo-4-desktop-jpg@2x.jpg 2x" width="280" height="180" alt="Панорама Сергея">
+              </picture>
             </a>
             <div class="photo-item__description item-description">
               <p class="item-description__name">Сергей</p>
@@ -107,7 +131,11 @@
           </li>
           <li class="photo-list__item photo-item">
             <a class="photo-item__link item-link" href="#">
-              <img class="item-link__image" src="img/photo-5-mobile-jpg.jpg" width="280" height="180" alt="Панорама Максима">
+              <picture>
+                <source media="(min-width:1200px)" srcset="img/photo-5-desktop-jpg.jpg 1x, img/photo-5-desktop-jpg@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/photo-5-tablet-jpg.jpg 1x, img/photo-5-tablet-jpg@2x.jpg 2x">
+                <img class="item-link__image" src="img/photo-5-mobile-jpg.jpg" srcset="img/photo-5-desktop-jpg@2x.jpg 2x" width="280" height="180" alt="Панорама Максима">
+              </picture>
             </a>
             <div class="photo-item__description item-description">
               <p class="item-description__name">Максим</p>
@@ -118,7 +146,11 @@
           </li>
           <li class="photo-list__item photo-item">
             <a class="photo-item__link item-link" href="#">
-              <img class="item-link__image" src="img/photo-6-mobile-jpg.jpg" width="280" height="180" alt="Панорама Надежды">
+              <picture>
+                <source media="(min-width:1200px)" srcset="img/photo-6-desktop-jpg.jpg 1x, img/photo-6-desktop-jpg@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/photo-6-tablet-jpg.jpg 1x, img/photo-6-tablet-jpg@2x.jpg 2x">
+                <img class="item-link__image" src="img/photo-6-mobile-jpg.jpg" srcset="img/photo-6-desktop-jpg@2x.jpg 2x" width="280" height="180" alt="Панорама Надежды">
+              </picture>
             </a>
             <div class="photo-item__description item-description">
               <p class="item-description__name">Надежда</p>
@@ -136,8 +168,12 @@
         <form class="editor__form form" action="https://echo.htmlacademy.ru" method="get" id="post">
           <p class="form__description">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
           <div class="form__processing photo-processing">
-            <img class="photo-processing__image" src="img/photo-7-mobile.jpg" width="280" height="374" alt="Фотография для обработки">
-            <div class="photo-processing__icons list-effects">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photo-7-desktop-jpg.jpg 1x, img/photo-7-desktop-jpg@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-7-tablet-jpg.jpg 1x, img/photo-7-tablet-jpg@2x.jpg 2x">
+              <img class="photo-processing__image" src="img/photo-7-mobile-jpg.jpg" srcset="img/photo-7-desktop-jpg@2x.jpg 2x" width="280" height="374" alt="Фотография для обработки">
+            </picture>
+              <div class="photo-processing__icons list-effects">
               <p class="list-effects__field list-icons">
                 <label class="list-icons__filters filter-crop" for="button-crop"></label>
                 <input class="list-icons__range range-crop" id="button-crop" type="range" min="0" max="100" step="1" value="80">
@@ -162,7 +198,11 @@
 
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="img/logotype-blue-tablet-svg.svg" width="146" height="40" alt="Пинк">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/logotype-blue-desktop.svg">
+          <source media="(min-width:660px)" srcset="img/logotype-blue-tablet-svg.svg">
+          <img class="page-footer__logo-image" src="img/logotype-blue-tablet-svg.svg" width="146" height="40" alt="Пинк">
+        </picture>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
