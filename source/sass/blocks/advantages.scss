@@ -72,6 +72,10 @@
   margin-top: 40px;
   margin-bottom: 0;
 
+  :last-of-type {
+    padding-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 40px;
     width: 50%;
@@ -87,7 +91,7 @@
 .advantages__item {
   text-align: center;
   width: 88%;
-  height: 99px;
+  min-height: 99px;
   line-height: 1.71;
   color: $dark-blue;
   padding: 27px 10%;
@@ -128,17 +132,30 @@
   }
 }
 
-.advantages__image {
+.advantages__image--three {
   margin-top: 45px;
+  margin-bottom: 0;
   height: 281px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    width: 40%;
+    width: 100%;
+    height: 100%;
   }
 }
 
-.advantages__image--phone {
-  width: 157px;
-  height: 320px;
+.advantages__image--one {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.advantages__image--two {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

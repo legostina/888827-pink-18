@@ -4,17 +4,17 @@
   align-items: center;
   width: 100%;
   height: 462px;
-  background: url("../img/iphone-5-in-hand.png") -39px 175px no-repeat, url("../img/back-mobile-1-x-jpg.png");
+  background: url("../img/back-mobile-1-x-jpg.png");
 
   @media (min-width: $tablet-width) {
     align-items: start;
     height: 692px;
-    background: url("../img/iphone-6-copy.png") -113px 148px no-repeat, url("../img/back-mobile-1-x-jpg.png");
+    background: url("../img/back-tablet-1-x.png");
   }
 
   @media (min-width: $desktop-width) {
     height: 805px;
-    background: url("../img/iphone-6-copy.png") 240px 261px no-repeat, url("../img/back-mobile-1-x-jpg.png");
+    background: url("../img/back-desktop-jpg.jpg");
   }
 }
 
@@ -34,20 +34,22 @@
     height: 126px;
     font-size: 40px;
     padding-top: 135px;
-    margin-left: 69px;
+    margin-left: 11.8%;
   }
 
   @media (min-width: $desktop-width) {
     width: 233px;
     height: 157px;
     font-size: 50px;
-    margin-left: 167px;
+    margin-left: 13.8%;
   }
 }
 
 .product__image {
-  padding-top: 36px;
-  margin-right: 50px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .product__download {
@@ -66,11 +68,11 @@
     background: none;
     margin-top: -356px;
     padding-bottom: 100px;
-    margin-left: 20px;
+    margin-left: 3.03%;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -430px;
-    margin-left: 130px;
+    margin-left: 10.8%;
   }
 }

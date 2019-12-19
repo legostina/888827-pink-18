@@ -5,7 +5,7 @@
   background-color: $grey;
 
   @media (min-width: $desktop-width) {
-    width: 78%;
+    width: 78.3%;
   }
 }
 
@@ -13,6 +13,10 @@
   @media (min-width: $tablet-width) {
     float: left;
     margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 8.51%;
   }
 }
 

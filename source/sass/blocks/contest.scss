@@ -10,10 +10,12 @@
 
   @media (min-width: $tablet-width) {
     height: 322px;
+    background: url("../img/back-tablet-1-x.png") -283px -113px no-repeat;
   }
 
   @media (min-width: $desktop-width) {
     height: 337px;
+    background: url("../img/back-desktop.png") -686px -8px no-repeat;
   }
 }
 
