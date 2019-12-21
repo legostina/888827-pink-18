@@ -1,9 +1,7 @@
 .hit {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  width: 276px;
   height: 94px;
   background-color: $dark-blue;
   background-image: url("../img/hit-ribbon.png");
@@ -11,6 +9,20 @@
   color: $white;
   text-align: center;
   margin-top: 60px;
+  width: 960px;
+  flex-direction: row;
+}
+
+.hit__type {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 233px;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+  }
 }
 
 .hit__name {

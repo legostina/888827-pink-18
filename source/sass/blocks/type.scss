@@ -1,18 +1,24 @@
 .type {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  width: 956px;
+  flex-direction: row;
+  height: 61px;
+  background-color: $white;
 }
 
 .type__name {
-  width: 132px;
-  height: 14px;
+  width: 233px;
+  height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-family: "OpenSans-Bold", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
-  line-height: 2.14;
-  text-align: left;
   color: $dark-blue;
   text-transform: uppercase;
+  border: 2px solid $grey;
 }

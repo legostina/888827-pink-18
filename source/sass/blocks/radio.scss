@@ -1,0 +1,28 @@
+.radio__list {
+  background: none;
+  width: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 26px;
+    border: 1px solid $border-input;
+    border-radius: 20px;
+    background-color: $white;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 16px;
+    border: 1px solid $border-input;
+    border-radius: 20px;
+    background-color: $pink;
+  }
+}
+
+.radio__description {
+  padding-left: 57px;
+}

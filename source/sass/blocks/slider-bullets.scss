@@ -12,6 +12,12 @@
   }
 }
 
+.slider-bullets--rates {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .slider-bullets__active {
   width: 12px;
   height: 12px;

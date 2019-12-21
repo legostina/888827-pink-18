@@ -2,28 +2,50 @@
   display: flex;
   position: relative;
 
-  ::after {
+  &::after {
     content: "24";
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 140px;
+    left: 70px;
     height: 200px;
     width: 200px;
-    font-size: 110px;
+    font-weight: 600;
+    font-size: 88px;
     color: $pink;
+
+    @media (min-width: $desktop-width) {
+      top: 157px;
+      left: 80px;
+      font-size: 118px;
+    }
   }
 
-  ::before {
+  &::before {
     content: "";
     display: block;
-    width: 150px;
-    height: 150px;
-    border: 20px solid $pink;
-    border-radius: 125px;
+    width: 175px;
+    height: 175px;
+    border: 15px solid $pink;
+    border-radius: 160px;
+    position: absolute;
+    top: 105px;
+    left: 17px;
+
+    @media (min-width: $desktop-width) {
+      width: 218px;
+      height: 224px;
+      top: 119px;
+      left: 25px;
+    }
   }
 }
 
 .hours__clock {
   margin-top: 50px;
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
+  }
 }

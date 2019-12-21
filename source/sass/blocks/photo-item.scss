@@ -11,6 +11,16 @@
   padding: 6px 12px 18px 20px;
   position: absolute;
   right: 20px;
+
+  @media (min-width: $tablet-width) {
+    right: 3%;
+    margin-top: 9%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 10%;
+    margin-top: 4%;
+  }
 }
 
 .photo-item {
