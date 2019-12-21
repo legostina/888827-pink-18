@@ -100,7 +100,7 @@
               <picture>
                 <source media="(min-width:960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
                 <source media="(min-width:660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-                <img class="advantages__image--phone" src="img/iphone-screen-mobile@1x.png" alt="Приветствие от Пинк">
+                <img class="advantages__image--phone" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Приветствие от Пинк">
               </picture>
             </p>
           </li>
@@ -133,20 +133,50 @@
 
       <section class="rates">
         <h2 class="visually-hidden">Тарифы</h2>
-        <div class="rates__hit hit">
-          <p class="hit__name">Стандарт</p>
-          <p class="hit__price">3,99 USD</p>
-        </div>
-        <div class="rates__type type">
-          <p class="type__name">Розовый фильтр</p>
-        </div>
-        <div class="rates__type type">
-          <p class="type__name">Смайлики</p>
-        </div>
-        <div class="rates__type type">
-          <p class="type__name">Комментарии</p>
-        </div>
-        <div class="rates__slider slider-bullets">
+        <table class="rates__list">
+          <tbody>
+            <tr class="rates__hit hit">
+              <th class="hit__type"></th>
+              <th class="hit__type">
+                <p class="hit__name">База</p>
+                <p class="hit__price">1,99 USD</p>
+              </th>
+              <th class="hit__type">
+              <p class="hit__name">Стандарт</p>
+              <p class="hit__price">3,99 USD</p>
+              </th>
+              <th class="hit__type">
+                <p class="hit__name">Анлим</p>
+                <p class="hit__price">9,99 USD</p>
+              </th>
+            </tr>
+            <tr class="rates__type type">
+              <td class="type__filter rates-filter">
+                <p class="rates-filter__name">Розовый фильтр</p>
+              </td>
+              <th class="type__name"><img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да"></th>
+              <th class="type__name"><img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да"></th>
+              <th class="type__name"><img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да"></th>
+            </tr>
+            <tr class="rates__type type">
+              <td class="type__filter rates-filter">
+                <p class="rates-filter__name">Смайлики</p>
+              </td>
+              <th class="type__name"><img class=type__image" src="img/no-svg.svg" width="31" height="21" alt="Нет"></th>
+              <th class="type__name"><img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да"></th>
+              <th class="type__name"><img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да"></th>
+            </tr>
+            <tr class="rates__type type">
+              <td class="type__filter rates-filter">
+                <p class="rates-filter__name">Комментарии</p>
+              </td>
+              <th class="type__name"><img class=type__image" src="img/no-svg.svg" width="31" height="21" alt="Нет"></th>
+              <th class="type__name"><img class=type__image" src="img/no-svg.svg" width="31" height="21" alt="Нет"></th>
+              <th class="type__name"><img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да"></th>
+            </tr>
+          </tbody>
+        </table>
+        <div class="rates__slider slider-bullets--rates">
           <button class="slider-bullets__first" type="button"></button>
           <button class="slider-bullets__active" type="button"></button>
           <button class="slider-bullets__third" type="button"></button>

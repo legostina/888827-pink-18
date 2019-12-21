@@ -4,4 +4,22 @@
   flex-direction: column;
   align-items: center;
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
+}
+
+.rates__list {
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 92.5%;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 77.8%;
+  }
 }
