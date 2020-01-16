@@ -4,7 +4,23 @@
   text-align: center;
   align-items: center;
   flex-direction: inherit;
-  padding: 40px 0;
+  padding: 34px 0;
+  height: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+    padding: 45px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    height: unset;
+    flex-wrap: wrap;
+    width: 160px;
+  }
 }
 
 .copyright__link {
@@ -19,9 +35,16 @@
   width: 86px;
   height: 15px;
   font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.29;
   text-align: left;
   color: #283645;
   margin-right: 15px;
+
+  @media (min-width: $desktop-width) {
+    width: 105px;
+    font-size: 18px;
+    margin-right: 22px;
+  }
 }

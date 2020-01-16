@@ -1,5 +1,5 @@
 .photo-item__hit-day {
-  width: 101px;
+  width: 108px;
   height: 12px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 12px;
@@ -18,8 +18,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 10%;
-    margin-top: 4%;
+    right: 11%;
+    margin-top: 4.5%;
   }
 }
 
@@ -36,7 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 20px 10px;
+    margin: 20px 10px 34px 10px;
     height: 555px;
   }
 }
@@ -51,7 +51,6 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     height: 630px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 0 17px 0;
   }
 }

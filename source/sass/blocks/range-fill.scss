@@ -4,12 +4,25 @@
   @media (min-width: $tablet-width) {
     display: flex;
     color: $black;
-    margin: 30px 0;
     order: 0;
     width: 202px;
+    -webkit-appearance: none;
+    height: 2px;
+    background: $black;
+    margin: 10px 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 402px;
+    width: 288px;
+    margin: 22px 0;
   }
+}
+
+.range-fill::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $pink;
+  border-radius: 20px;
+  background: $white;
 }

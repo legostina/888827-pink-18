@@ -23,7 +23,7 @@
   text-align: center;
   width: 100%;
   color: $white;
-  height: 63px;
+  height: 62px;
   border-bottom: 1px solid $black;
   border-top: 1px solid $border-nav;
   font-size: 18px;
@@ -36,7 +36,7 @@
     font-size: 18px;
     font-weight: normal;
     line-height: 1;
-    text-align: left;
+    text-align: center;
     text-transform: none;
 
     &--active {
@@ -46,7 +46,7 @@
         content: "";
         position: absolute;
         top: 52px;
-        left: -6px;
+        left: 0;
         height: 2px;
         width: 100%;
         background: $darkgrey;

@@ -20,7 +20,7 @@
 
   @media (min-width: $desktop-width) {
     background: none;
-    width: 75%;
+    width: 57%;
     justify-content: space-around;
     display: flex;
   }
@@ -36,7 +36,7 @@
   border-bottom: 1px solid $black;
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: 35%;
   }
 }
 
@@ -54,6 +54,7 @@
   position: absolute;
   right: 5px;
   top: 24px;
+  outline: none;
 
   &::before {
     content: "";
