@@ -6,7 +6,7 @@
   color: $black;
   margin: 22px 0;
   order: 4;
-  -webkit-appearance: none;
+  appearance: none;
   height: 2px;
   background: $black;
 
@@ -24,7 +24,7 @@
 }
 
 .range-crop::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   width: 14px;
   height: 14px;
   border: 2px solid $pink;

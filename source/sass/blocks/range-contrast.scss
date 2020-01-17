@@ -6,7 +6,7 @@
     color: $black;
     order: 0;
     width: 202px;
-    -webkit-appearance: none;
+    appearance: none;
     height: 2px;
     background: $black;
     margin: 10px 0;
@@ -19,7 +19,7 @@
 }
 
 .range-contrast::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   width: 14px;
   height: 14px;
   border: 2px solid $pink;
