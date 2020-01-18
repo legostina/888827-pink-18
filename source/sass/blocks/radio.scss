@@ -1,12 +1,31 @@
 .radio__list {
   background: none;
+  position: relative;
+  bottom: 12px;
   width: 0;
 
   &::before {
     content: "";
     display: block;
-    width: 27px;
-    height: 26px;
+    width: 37px;
+    height: 36px;
+    border: 1px solid $border-input;
+    border-radius: 20px;
+    background-color: $white;
+  }
+}
+
+.radio__list--checked {
+  background: none;
+  position: relative;
+  bottom: 12px;
+  width: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 36px;
     border: 1px solid $border-input;
     border-radius: 20px;
     background-color: $white;
@@ -15,8 +34,11 @@
   &::after {
     content: "";
     display: block;
-    width: 17px;
-    height: 16px;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    width: 15px;
+    height: 15px;
     border: 1px solid $border-input;
     border-radius: 20px;
     background-color: $pink;

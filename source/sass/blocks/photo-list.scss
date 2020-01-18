@@ -10,5 +10,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }

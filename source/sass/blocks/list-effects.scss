@@ -1,11 +1,16 @@
 .list-effects {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid $border-input;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
     padding-top: 0;
+    padding-bottom: 0;
+    border: none;
   }
 }

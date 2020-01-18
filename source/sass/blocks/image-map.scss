@@ -1,0 +1,12 @@
+.image-map {
+  height: 200px;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 35px;
+    background: url("/img/map-marker-svg.svg");
+  }
+}

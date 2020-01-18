@@ -5,13 +5,6 @@
   align-items: center;
 }
 
-.contacts::after {
-  content: "";
-  display: flex;
-  border: 160px solid transparent;
-  border-top: 54px solid $white;
-}
-
 .contacts__title {
   width: 222px;
   height: 48px;

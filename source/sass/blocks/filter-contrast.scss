@@ -4,6 +4,16 @@
   height: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 48px;
+    margin-right: 28px;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: contain;
+    width: 34px;
+    height: 34px;
+    margin-right: 55px;
   }
 }
