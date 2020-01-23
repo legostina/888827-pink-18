@@ -1,13 +1,42 @@
+.rates-filter {
+  width: 233px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 233px;
+  }
+}
+
 .rates-filter__name {
   display: flex;
-  height: 59px;
   align-items: center;
   margin: 0;
-  width: 234px;
-  border: 2px solid $grey;
-  font-size: 18px;
+  padding-left: 4px;
+  width: 206px;
+  height: 59px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 1.67;
   color: $dark-blue;
-  padding-left: 24px;
+  border: none;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 139px;
+    height: 45px;
+    font-size: 14px;
+    padding-left: 11px;
+    border: 2px solid $grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 206px;
+    height: 59px;
+    font-size: 18px;
+    padding-left: 24px;
+  }
 }

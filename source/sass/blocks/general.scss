@@ -1,6 +1,6 @@
 .general {
   width: unset;
-
+  max-width: 940px;
 
   @media (min-width: $tablet-width) {
     width: 100%;

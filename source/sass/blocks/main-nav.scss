@@ -1,6 +1,7 @@
 .main-nav {
   position: relative;
   width: 100%;
+  max-width: 1200px;
   min-height: 63px;
   margin: 0 auto;
   top: 0;
@@ -12,6 +13,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    min-height: 109px;
   }
 }
 

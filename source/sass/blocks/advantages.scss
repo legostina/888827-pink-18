@@ -51,12 +51,24 @@
 }
 
 .advantages__question {
+  margin: 0;
+  height: 111px;
+  display: flex;
+  align-items: center;
+  line-height: 29px;
+  padding-top: 13px;
+
   @media (min-width: $tablet-width) {
     margin: 36px 0 0 0;
   }
 }
 
 .advantages__sentence {
+  margin: 0;
+  line-height: 29px;
+  padding-bottom: 32px;
+  padding-top: 3px;
+
   @media (min-width: $tablet-width) {
     width: 400px;
     margin: 0;
@@ -69,7 +81,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 18px;
   margin-bottom: 0;
 
   :last-of-type {
@@ -94,7 +106,7 @@
   min-height: 99px;
   line-height: 1.71;
   color: $dark-blue;
-  padding: 27px 10%;
+  padding: 35px 10% 0 10%;
   font-size: 14px;
 
   @media (min-width: $tablet-width) {
@@ -110,8 +122,10 @@
 .advantages__title {
   color: #000000;
   font-family: "OpenSans-Bold", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 24px;
+  margin-bottom: 10px;
+  margin-top: 0;
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
@@ -123,6 +137,10 @@
 }
 
 .advantages__description {
+  margin: 0;
+  height: 70px;
+  line-height: 24px;
+
   @media (min-width: $desktop-width) {
     color: $dark-blue;
     font-size: 18px;
@@ -135,7 +153,7 @@
 .advantages__image--three {
   margin-top: 45px;
   margin-bottom: 0;
-  height: 281px;
+  height: 275px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {

@@ -4,11 +4,15 @@
   flex-direction: column;
   align-items: center;
   font-family: "OpenSans", "Arial", sans-serif;
+  position: relative;
+  height: 379px;
 }
 
 .reviews::after {
   content: "";
   display: block;
+  position: absolute;
+  bottom: 0;
   height: 0;
   border-bottom: 30px solid #f2f2f2;
   border-left: 320px solid transparent;

@@ -3,24 +3,26 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
-  margin: 0 0 50px 0;
+  padding-top: 43px;
+  margin: 0 0 38px 0;
   border: none;
 
   @media (min-width: $tablet-width) {
     width: 91%;
     border: 2px solid #e5e5e5;
-    margin-top: 40px;
-    padding: 20px 10px 40px 10px;
+    margin-top: 51px;
+    margin-bottom: 67px;
+    padding: 20px 10px 51px 10px;
+    order: 4;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     border: solid 2px #e5e5e5;
-    height: 226px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 10px 10px 85px 10px;
+    height: 217px;
+    margin-top: 51px;
+    margin-bottom: 65px;
+    padding: 10px 10px 0 10px;
   }
 }
 
@@ -40,16 +42,19 @@
   font-weight: normal;
   line-height: 1.67;
   text-align: left;
-  padding: 20px;
+  padding: 14px 20px 26px 20px;
   display: flex;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 80%;
+    width: 76%;
+    margin-top: 12px;
+    padding: 14px 20px 18px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 30px;
+    margin-top: 19px;
     width: 85%;
+    height: 92px;
   }
 }

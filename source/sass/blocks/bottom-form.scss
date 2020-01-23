@@ -10,6 +10,7 @@
     justify-content: space-between;
     display: flex;
     width: 95%;
+    order: 5;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,12 +21,12 @@
 
 .bottom-form__send {
   width: 276px;
-  height: 59px;
+  height: 64px;
   border: solid 2px $green;
   background-color: $green;
   color: $white;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
   text-align: center;
@@ -43,5 +44,9 @@
     background-color: $border-input;
     border-color: $border-input;
     color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 303px;
   }
 }

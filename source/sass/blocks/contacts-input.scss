@@ -1,51 +1,70 @@
 .contacts-input {
   @media (min-width: $tablet-width) {
-    width: 91%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 45%;
-  }
-}
-
-.contacts-input__label {
-  display: flex;
-  width: 135px;
-  height: 28px;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 2.14;
-  text-align: left;
-  color: $pink;
-  text-transform: uppercase;
-  margin-left: 20px;
-
-  @media (min-width: $tablet-width) {
-    align-items: center;
-    margin-left: 40px;
-    width: 96%;
-    order: 2;
+    order: 1;
   }
 }
 
 .contacts-input__field {
   width: 276px;
-  height: 55px;
+  height: 57px;
   margin-top: 6px;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 19px;
   border: 2px solid $border-input;
 
   @media (min-width: $tablet-width) {
-    width: 90%;
+    width: 79%;
     margin-left: 20px;
+    margin-bottom: 10px;
     order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 76%;
+    margin-left: 11px;
+    margin-top: 0;
   }
 }
 
 .contacts-input__field::placeholder {
   color: $dark-blue;
   padding-left: 20px;
+}
+
+.contacts-input__decor--telephone {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 0;
+    height: 59px;
+    width: 56px;
+    background: $border-input url("../img/phone-svg.svg") 16px 20px no-repeat;
+    border: 2px solid $border-input;
+    order: 2;
+    margin-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.contacts-input__decor--email {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 0;
+    height: 59px;
+    width: 56px;
+    background: $border-input url("../img/mail-svg.svg") 17px 22px no-repeat;
+    border: 2px solid $border-input;
+    order: 2;
+    margin-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }

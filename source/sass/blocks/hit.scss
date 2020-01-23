@@ -2,15 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 94px;
-  background-color: $dark-blue;
-  background-image: url("../img/hit-ribbon.png");
-  background-repeat: no-repeat;
+  height: 101px;
   color: $white;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 20px;
   width: 960px;
   flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    width: 616px;
+    height: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    height: 101px;
+  }
 }
 
 .hit__type {
@@ -18,10 +25,59 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  width: 233px;
+  width: 141px;
+  background-color: #283645;
+  border-left: 1px solid $white;
+  border-right: 1px solid $white;
+
+  &:nth-of-type(1) {
+    width: 141px;
+    height: 102px;
+
+    @media (min-width: $tablet-width) {
+      width: 223px;
+      background: none;
+      border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 211px;
+    }
+  }
+
+  &:nth-of-type(2) {
+    display: none;
+  }
+
+  &:nth-of-type(3) {
+    position: relative;
+    background-image: url("../img/hit-ribbon.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 1;
+    width: 274px;
+
+    @media (min-width: $tablet-width) {
+      background-position: -9px 0;
+      background-size: 43%;
+      width: 218px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 0 0;
+      background-size: unset;
+      width: 230px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    width: 153px;
+    width: 218px;
+    height: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    height: 100px;
   }
 }
 
@@ -34,7 +90,17 @@
   line-height: 1.67;
   text-align: center;
   text-transform: uppercase;
-  margin: 20px 0 0 0;
+  margin: 15px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin: 11px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin: 20px 0 0 0;
+  }
 }
 
 .hit__price {
@@ -46,4 +112,34 @@
   line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
+  margin: 15px 0 33px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin: 12px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    margin: unset;
+  }
+}
+
+.hit__mark {
+  position: absolute;
+  top: 14px;
+  left: 11px;
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+  font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    left: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 14px;
+    left: 11px;
+  }
 }
