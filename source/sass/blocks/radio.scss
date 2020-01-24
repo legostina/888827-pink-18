@@ -23,6 +23,18 @@
     background-color: $white;
   }
 
+  &:hover {
+    &::before {
+      border: 1px solid $dark-blue;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 1px solid $pink;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;

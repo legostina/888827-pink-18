@@ -8,8 +8,12 @@
   height: 13px;
   margin-top: 32px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-bottom: 40px;
+    display: none;
   }
 }
 
@@ -45,6 +49,16 @@
   border-radius: 10px;
   border: 0;
   padding: 0;
+
+  &:hover {
+    background-color: $dark-blue;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    opacity: 0.1;
+  }
 }
 
 .slider-bullets__second {
@@ -55,6 +69,16 @@
   border-radius: 10px;
   border: 0;
   padding: 0;
+
+  &:hover {
+    background-color: $dark-blue;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    opacity: 0.1;
+  }
 }
 
 .slider-bullets__third {
@@ -65,4 +89,14 @@
   border-radius: 10px;
   border: 0;
   padding: 0;
+
+  &:hover {
+    background-color: $dark-blue;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    opacity: 0.1;
+  }
 }

@@ -3,6 +3,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     width: 153px;
   }
 
@@ -38,5 +39,24 @@
     height: 59px;
     font-size: 18px;
     padding-left: 24px;
+  }
+}
+
+.rates-filter__name--mobile {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 4px;
+  width: 206px;
+  height: 59px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.67;
+  color: $dark-blue;
+  border: none;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
