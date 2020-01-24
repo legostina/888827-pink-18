@@ -1,6 +1,6 @@
 .general-input {
   @media (min-width: $tablet-width) {
-    width: 91%;
+    width: 98%;
   }
 }
 
@@ -13,11 +13,13 @@
   text-align: left;
   color: $pink;
   text-transform: uppercase;
+  padding-left: 22px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     width: 96%;
+    padding-left: 13px;
   }
 }
 
@@ -25,8 +27,9 @@
   width: 276px;
   height: 55px;
   margin-top: 6px;
+  margin-left: -22px;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 19px;
   border: 2px solid $border-input;
 
   &:hover {
@@ -40,6 +43,10 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 58px;
   }
 }
 

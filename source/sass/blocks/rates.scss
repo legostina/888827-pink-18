@@ -4,22 +4,35 @@
   flex-direction: column;
   align-items: center;
   background-color: $grey;
+  height: 443px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
+    padding-bottom: 42px;
+    height: 284px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 65px;
+    height: 378px;
   }
 }
 
 .rates__list {
   width: 100%;
+  max-width: 940px;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 92.5%;
-    padding-bottom: 60px;
+    width: 93.5%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 77.8%;
+    width: 78.8%;
+    margin-top: 21px;
   }
 }

@@ -195,6 +195,11 @@
 
   @media (min-width: $tablet-width) {
     top: 6px;
+    left: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 6px;
     left: 195px;
   }
 }

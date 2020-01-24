@@ -9,6 +9,8 @@
 }
 
 .title-name__field {
+  position: relative;
+  top: 32px;
   width: 184px;
   height: 29px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -19,6 +21,10 @@
   color: $pink;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: -15px;

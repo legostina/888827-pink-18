@@ -26,13 +26,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 67px;
+  height: 68px;
 
   @media (min-width: $tablet-width) {
-    height: 107px;
+    height: 108px;
   }
 
   @media (min-width: $desktop-width) {
+    height: 109px;
     justify-content: center;
   }
 }
@@ -46,5 +47,9 @@
   @media (min-width: $tablet-width) {
     width: 147px;
     height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -12px;
   }
 }

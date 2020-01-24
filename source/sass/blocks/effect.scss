@@ -2,14 +2,15 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 70px;
+  margin-left: 71px;
   text-align: left;
-  width: 296px;
-  margin-top: 80px;
+  width: 100%;
+  margin-top: 69px;
 
   @media (min-width: $desktop-width) {
     width: 526px;
     height: 197px;
+    margin-top: 131px;
   }
 }
 
@@ -31,8 +32,15 @@
   line-height: 24px;
   color: $dark-blue;
 
+  @media (min-width: $tablet-width) {
+    width: 299px;
+    margin: 10px 0;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 527px;
     font-size: 18px;
+    margin: 21px 0 30px 0;
     line-height: 30px;
   }
 }

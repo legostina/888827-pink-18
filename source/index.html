@@ -45,22 +45,26 @@
       <h1 class="visually-hidden">Пинк - взгляните на жизнь иначе!</h1>
       <section class="product">
         <header class="product__header">
-          <h2 class="visually-hidden">Приложение Пинк</h2>
-          <p class="product__slogan">Взгляните на жизнь иначе!</p>
-          <picture>
-            <source media="(min-width:960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-            <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-            <img class="product__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение Пинк на телефоне">
-          </picture>
-        </header>
-        <div class="product__download download">
-          <a class="download__button" href="#">Скачать приложение</a>
-          <div class="download__icons icons">
-            <a class="icons__apple" href="#">Скачать для Apple</a>
-            <a class="icons__android" href="#">Скачать для Android</a>
-            <a class="icons__microsoft" href="#">Скачать для Windows</a>
+          <div class="product__container product-info">
+            <h2 class="visually-hidden">Приложение Пинк</h2>
+            <p class="product-info__slogan">Взгляните на жизнь иначе!</p>
+            <picture>
+              <source media="(min-width:960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+              <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+              <img class="product-info__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение Пинк на телефоне">
+            </picture>
           </div>
-          <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </header>
+        <div class="product__application product-download">
+          <div class="product-download__info download">
+            <a class="download__button" href="#">Скачать приложение</a>
+            <div class="download__icons icons">
+              <a class="icons__apple" href="#">Скачать для Apple</a>
+              <a class="icons__android" href="#">Скачать для Android</a>
+              <a class="icons__microsoft" href="#">Скачать для Windows</a>
+            </div>
+            <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
 
@@ -142,8 +146,9 @@
                 <p class="hit__price">1,99 USD</p>
               </th>
               <th class="hit__type">
-              <p class="hit__name">Стандарт</p>
-              <p class="hit__price">3,99 USD</p>
+                <p class="hit__name">Стандарт</p>
+                <p class="hit__price">3,99 USD</p>
+                <span class="hit__mark">хит</span>
               </th>
               <th class="hit__type">
                 <p class="hit__name">Анлим</p>
@@ -155,15 +160,22 @@
                 <p class="rates-filter__name">Розовый фильтр</p>
               </td>
               <th class="type__name"><img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да"></th>
-              <th class="type__name"><img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да"></th>
+              <th class="type__name">
+                <p class="rates-filter__name--mobile">Розовый фильтр</p>
+                <img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да">
+              </th>
               <th class="type__name"><img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да"></th>
             </tr>
             <tr class="rates__type type">
               <td class="type__filter rates-filter">
                 <p class="rates-filter__name">Смайлики</p>
               </td>
-              <th class="type__name"><img class=type__image" src="img/no-svg.svg" width="31" height="21" alt="Нет"></th>
-              <th class="type__name"><img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да"></th>
+              <th class="type__name"><img class=type__image" src="img/no-svg.svg" width="31" height="21" alt="Нет">
+              </th>
+              <th class="type__name">
+                <p class="rates-filter__name--mobile">Смайлики</p>
+                <img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да">
+              </th>
               <th class="type__name"><img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да"></th>
             </tr>
             <tr class="rates__type type">
@@ -171,7 +183,10 @@
                 <p class="rates-filter__name">Комментарии</p>
               </td>
               <th class="type__name"><img class=type__image" src="img/no-svg.svg" width="31" height="21" alt="Нет"></th>
-              <th class="type__name"><img class=type__image" src="img/no-svg.svg" width="31" height="21" alt="Нет"></th>
+              <th class="type__name">
+                <p class="rates-filter__name--mobile">Комментарии</p>
+                <img class=type__image" src="img/no-svg.svg" width="31" height="21" alt="Нет">
+              </th>
               <th class="type__name"><img class=type__image" src="img/yes-svg.svg" width="31" height="21" alt="Да"></th>
             </tr>
           </tbody>
@@ -199,19 +214,9 @@
             <p class="item-info__address">ул. Большая Конюшенная, 19/8</p>
           </div>
         </div>
-        <div class="triangle">
-          <picture>
-            <source media="(min-width:960px)" srcset="img/triangle-white-footer-svg.svg">
-            <source media="(min-width:660px)" srcset="img/triangle-white-footer-svg.svg">
-            <img class="triangle__image" src="img/triangle-white-footer-svg.svg" width="320" height="123" alt="Треугольник">
-          </picture>
-        </div>
+        <p class="contacts__triangle">Белый треугольник</p>
         <div class="contacts__map image-map" id="YMapsID">
-          <picture>
-            <source media="(min-width:960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-            <source media="(min-width:660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-            <img class="image-map__background" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
-          </picture>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1579855295200!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
       </section>
 

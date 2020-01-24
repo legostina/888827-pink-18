@@ -3,6 +3,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .contacts__title {
@@ -13,11 +14,57 @@
   font-weight: 300;
   text-align: center;
   color: $dark-blue;
-  margin: 35px 0;
+  margin: 43px 0 44px 0;
+  line-height: 29px;
 
   @media (min-width: $tablet-width) {
     width: 369px;
     height: 78px;
     font-size: 40px;
+    margin: 47px 0 60px 0;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 471px;
+    font-size: 50px;
+    margin: 66px 0 60px 0;
+    line-height: 59px;
+  }
+}
+
+.contacts__triangle {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 201px;
+  color: $white;
+  font-size: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 18px;
+    left: 0;
+    right: 0;
+    padding-top: 5%;
+    background: linear-gradient(to right top, transparent 49.5%, $white 50%) left / 50.025% 100% no-repeat, linear-gradient(to left top, transparent 49.5%, $white 50%) right / 50.025% 100% no-repeat;
+
+    @media (min-width: $tablet-width) {
+      height: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 42px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    bottom: 375px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 501px;
   }
 }

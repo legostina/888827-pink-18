@@ -10,6 +10,7 @@
   @media (min-width: $tablet-width) {
     margin-right: 20px;
     padding: 45px 0;
+    height: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +21,7 @@
     height: unset;
     flex-wrap: wrap;
     width: 160px;
+    margin-right: 28px;
   }
 }
 

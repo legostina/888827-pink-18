@@ -3,9 +3,54 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 34px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column-reverse;
+    margin-top: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 51px;
+    margin-bottom: 163px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 221px;
+      left: -126px;
+      width: 22px;
+      height: 41px;
+      background: url("../img/left-arrow-svg.svg") no-repeat;
+    }
+
+    &:hover {
+      &::before {
+        color: $dark-blue;
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      &::before {
+        color: $dark-blue;
+        opacity: 0.1;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 221px;
+      right: -126px;
+      width: 22px;
+      height: 41px;
+      background: url("../img/right-arrow-svg.svg") no-repeat;
+      transform: rotate(179deg);
+    }
   }
 }
 
@@ -17,8 +62,22 @@
   line-height: 1.67;
   text-align: center;
   color: $black;
-  margin: 0;
-  padding-top: 39px;
+  margin-top: -60px;
+
+  @media (min-width: $tablet-width) {
+    width: 182px;
+    height: 20px;
+    font-size: 20px;
+    flex-direction: column-reverse;
+    margin-top: 29px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 138px;
+    width: 220px;
+    font-size: 24px;
+  }
 }
 
 .top-info__info {
@@ -31,24 +90,40 @@
     line-height: 30px;
     color: $dark-blue;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .top-info__description {
   width: 88%;
   height: 165px;
   font-size: 14px;
-  line-height: 2.14;
+  line-height: 2.2;
   text-align: center;
   color: $dark-blue;
+  margin-top: 9px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
     height: 79px;
     font-size: 18px;
     line-height: 1.67;
+    margin-top: -68px;
   }
 
   @media (min-width: $desktop-width) {
     width: 689px;
+    margin-top: 80px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 79px;
+      height: 63px;
+      margin: 0 auto 51px auto;
+      background: url("../img/quotes-svg.svg") no-repeat;
+    }
   }
 }

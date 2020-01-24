@@ -1,16 +1,54 @@
 .trip {
-  padding-bottom: 30px;
+  padding-bottom: 41px;
+  height: 41px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 40px;
+    margin-left: 57px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 259px;
+    width: 255px;
+  }
+
+  &:first-of-type {
+    @media (min-width: $desktop-width) {
+      order: 1;
+    }
+  }
+
+  &:nth-of-type(2) {
+    @media (min-width: $desktop-width) {
+      order: 4;
+    }
+  }
+
+  &:nth-of-type(3) {
+    @media (min-width: $desktop-width) {
+      order: 2;
+    }
+  }
+
+  &:nth-of-type(4) {
+    @media (min-width: $desktop-width) {
+      order: 5;
+    }
+  }
+
+  &:nth-of-type(5) {
+    @media (min-width: $desktop-width) {
+      order: 3;
+    }
+  }
+
+  &:nth-of-type(6) {
+    @media (min-width: $desktop-width) {
+      order: 6;
+    }
   }
 }
 
 .trip__done {
+  position: relative;
   width: 200px;
   height: 19px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -18,40 +56,61 @@
   line-height: 1.67;
   text-align: left;
   color: $dark-blue;
-}
+  padding-left: 70px;
+  padding-top: 8px;
 
-.trip:first-of-type {
-  @media (min-width: $desktop-width) {
-    order: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 2px solid $border-input;
+    background-color: $white;
+  }
+
+  &:hover {
+    &::before {
+      border: 1px solid $dark-blue;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 1px solid $pink;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    width: 21px;
+    height: 10px;
+    border-right: 2px solid $pink;
+    border-top: 2px solid $pink;
+    transform: rotate(135deg);
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 59px;
   }
 }
 
-.trip:nth-of-type(2) {
-  @media (min-width: $desktop-width) {
-    order: 4;
-  }
+.trip__check {
+  visibility: hidden;
+  display: none;
 }
 
-.trip:nth-of-type(3) {
-  @media (min-width: $desktop-width) {
-    order: 2;
-  }
+.trip__check[type="checkbox"] + .trip__done::after {
+  content: none;
 }
 
-.trip:nth-of-type(4) {
-  @media (min-width: $desktop-width) {
-    order: 5;
-  }
-}
-
-.trip:nth-of-type(5) {
-  @media (min-width: $desktop-width) {
-    order: 3;
-  }
-}
-
-.trip:nth-of-type(6) {
-  @media (min-width: $desktop-width) {
-    order: 6;
-  }
+.trip__check[type="checkbox"]:checked + .trip__done::after {
+  content: "";
 }

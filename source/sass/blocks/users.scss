@@ -1,4 +1,18 @@
 .users {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.users__favorite {
+  display: flex;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 494px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 510px;
+  }
 }

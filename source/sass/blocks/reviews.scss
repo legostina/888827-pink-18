@@ -4,16 +4,34 @@
   flex-direction: column;
   align-items: center;
   font-family: "OpenSans", "Arial", sans-serif;
+  position: relative;
+  height: 377px;
+
+  @media (min-width: $tablet-width) {
+    height: 402px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 495px;
+  }
 }
 
 .reviews::after {
   content: "";
   display: block;
+  position: absolute;
+  bottom: 0;
   height: 0;
-  border-bottom: 30px solid #f2f2f2;
+  border-bottom: 25px solid #f2f2f2;
   border-left: 320px solid transparent;
 
   @media (min-width: $tablet-width) {
     border-left: 660px solid transparent;
+    border-bottom: 50px solid #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: 1200px solid transparent;
+    border-bottom: 82px solid #f2f2f2;
   }
 }
