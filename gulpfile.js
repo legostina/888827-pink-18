@@ -16,6 +16,9 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
+var htmlmin = require("gulp-htmlmin");
+var uglify = require("gulp-uglify");
+var concat = require("gulp-concat");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -27,6 +30,29 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("js", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(csso())
+    .pipe(rename("*.min.js"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/js"))
+    .pipe(server.stream());
+});
+
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(gulp.dest("source"))
     .pipe(server.stream());
 });
 
@@ -108,6 +134,30 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"));
+});
+
+gulp.task("min-js", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(concat("script.js"))
+    .pipe(uglify())
+    .pipe(rename("*.min.js"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/js"))
+});
+
+gulp.task("min-html", function () {
+  return gulp.src("source/*.html")
+    .pipe(plumber())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(htmlmin())
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("sprite", function () {
