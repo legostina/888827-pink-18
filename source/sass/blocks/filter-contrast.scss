@@ -1,19 +1,19 @@
 .filter-contrast {
-  background: url("../img/contrastsvg.svg");
   width: 32px;
   height: 32px;
+  background: url("../img/contrastsvg.svg");
 
   @media (min-width: $tablet-width) {
-    margin-right: 28px;
-    background-size: contain;
     width: 17px;
     height: 17px;
+    margin-right: 28px;
+    background-size: contain;
   }
 
   @media (min-width: $desktop-width) {
-    background-size: contain;
     width: 34px;
     height: 34px;
     margin-right: 55px;
+    background-size: contain;
   }
 }

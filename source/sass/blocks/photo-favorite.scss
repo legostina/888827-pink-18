@@ -1,4 +1,6 @@
 .photo-favorite__hit-day {
+  position: absolute;
+  right: 20px;
   width: 108px;
   height: 12px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -9,8 +11,6 @@
   background-color: $pink;
   color: $white;
   padding: 6px 12px 18px 20px;
-  position: absolute;
-  right: 20px;
 
   @media (min-width: $tablet-width) {
     right: 3%;

@@ -17,16 +17,20 @@
 }
 
 .photo-item--day {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
   width: 100%;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     height: 92px;
     margin: 0 0 69px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 32px 0;
   }
 }
