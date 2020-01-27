@@ -3,13 +3,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    color: $black;
-    order: 0;
     width: 202px;
-    appearance: none;
     height: 2px;
+    color: $black;
     background: $black;
+    appearance: none;
     margin: 10px 0;
+    order: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,10 +19,10 @@
 }
 
 .range-fill::-webkit-slider-thumb {
-  appearance: none;
   width: 14px;
   height: 14px;
+  background: $white;
   border: 2px solid $pink;
   border-radius: 20px;
-  background: $white;
+  appearance: none;
 }

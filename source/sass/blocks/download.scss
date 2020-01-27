@@ -28,9 +28,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 98%;
     margin-bottom: 47px;
     margin-top: 0;
-    width: 98%;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,13 +43,13 @@
 }
 
 .download__description {
-  text-align: center;
-  color: $white;
   width: 230px;
   height: 37px;
+  text-align: center;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
+  color: $white;
 
   @media (min-width: $tablet-width) {
     width: 295px;

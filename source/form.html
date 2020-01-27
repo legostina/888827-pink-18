@@ -13,7 +13,7 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__top top-block">
-          <a class="top-block page-header__logo">
+          <a class="top-block page-header__logo" href="index.html">
             <picture>
               <source media="(min-width:960px)" srcset="img/logotype-white-desktop.svg">
               <source media="(min-width:660px)" srcset="img/logotype-white-tablet.svg">
@@ -44,8 +44,8 @@
     </header>
 
     <main class="page-main">
-      <div class="contest--form">
-        <h1 class="contest__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="contest contest--form">
+        <h1 class="contest__title contest__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
 
       <section class="history">
@@ -77,27 +77,27 @@
             <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="achievements__item crazy">
               <li class="crazy-trip trip">
-                <input class="trip__check" type="checkbox" id="shark" name="shark" checked>
+                <input class="trip__check visually-hidden" type="checkbox" id="shark" name="shark" checked>
                 <label class="trip__done" for="shark">Сделал селфи с акулой</label>
               </li>
               <li class="crazy-trip trip">
-                <input class="trip__check" type="checkbox" id="tan" name="tan" checked>
+                <input class="trip__check visually-hidden" type="checkbox" id="tan" name="tan" checked>
                 <label class="trip__done" for="tan">Обгорел на пляже</label>
               </li>
               <li class="crazy-trip trip">
-                <input class="trip__check" type="checkbox" id="star" name="star">
+                <input class="trip__check visually-hidden" type="checkbox" id="star" name="star">
                 <label class="trip__done" for="star">Видел Чака Норриса</label>
               </li>
               <li class="crazy-trip trip">
-                <input class="trip__check" type="checkbox" id="souvenir" name="souvenir">
+                <input class="trip__check visually-hidden" type="checkbox" id="souvenir" name="souvenir">
                 <label class="trip__done" for="souvenir">Накупил сувениров</label>
               </li>
               <li class="crazy-trip trip">
-                <input class="trip__check" type="checkbox" id="tower" name="tower" checked>
+                <input class="trip__check visually-hidden" type="checkbox" id="tower" name="tower" checked>
                 <label class="trip__done" for="tower">Удержал башню</label>
               </li>
               <li class="crazy-trip trip">
-                <input class="trip__check" type="checkbox" id="hotel" name="hotel">
+                <input class="trip__check visually-hidden" type="checkbox" id="hotel" name="hotel">
                 <label class="trip__done" for="hotel">Разгромил отель</label>
               </li>
             </ul>
@@ -118,14 +118,14 @@
                 <label class="contacts-window__label" for="telephone">Номер телефона</label>
                 <p class="contacts-window contacts-input">
                   <input class="contacts-input__field" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
-                  <span class="contacts-input__decor--telephone" type="submit">Телефон</span>
+                  <span class="contacts-input__decor--telephone">Телефон</span>
                 </p>
               </div>
               <div class="contacts-container__input contacts-window">
                 <label class="contacts-window__label" for="mail">Адрес почты</label>
                 <p class="contacts-window contacts-input">
                   <input class="contacts-input__field" type="email" name="mail" id="mail" placeholder="Введите почту *">
-                  <span class="contacts-input__decor--email" type="submit">Почта</span>
+                  <span class="contacts-input__decor--email">Почта</span>
                 </p>
               </div>
             </div>
@@ -142,15 +142,15 @@
           <fieldset class="general__app app">
             <legend class="app__title">С каким приложением путешествовали?</legend>
             <p class="app__item radio">
-              <input type="radio" class="radio__list" id="ios" name="app" checked>
+              <input type="radio" class="radio__list visually-hidden" id="ios" name="app" checked>
               <label for="ios" class="radio__description">Pink для iOS</label>
             </p>
             <p class="app__item radio">
-              <input type="radio" class="radio__list" id="android" name="app">
+              <input type="radio" class="radio__list visually-hidden" id="android" name="app">
               <label for="android" class="radio__description">Pink на Android</label>
             </p>
             <p class="app__item radio">
-              <input type="radio" class="radio__list" id="windows" name="app">
+              <input type="radio" class="radio__list visually-hidden" id="windows" name="app">
               <label for="windows" class="radio__description">Windows Phone</label>
             </p>
           </fieldset>

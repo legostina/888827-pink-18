@@ -1,19 +1,19 @@
 .filter-fill {
-  background: url("../img/fill-svg.svg");
   width: 48px;
   height: 43px;
+  background: url("../img/fill-svg.svg");
 
   @media (min-width: $tablet-width) {
-    background-size: contain;
     width: 25px;
     height: 25px;
     margin-right: 26px;
+    background-size: contain;
   }
 
   @media (min-width: $desktop-width) {
-    background-size: contain;
     width: 44px;
     height: 44px;
     margin-right: 44px;
+    background-size: contain;
   }
 }

@@ -11,8 +11,8 @@
   font-size: 14px;
   line-height: 2.14;
   text-align: left;
-  color: $pink;
   text-transform: uppercase;
+  color: $pink;
   padding-left: 22px;
 
   @media (min-width: $tablet-width) {
@@ -26,10 +26,10 @@
 .general-input__field {
   width: 276px;
   height: 55px;
+  font-size: 19px;
   margin-top: 6px;
   margin-left: -22px;
   border-radius: 3px;
-  font-size: 19px;
   border: 2px solid $border-input;
 
   &:hover {

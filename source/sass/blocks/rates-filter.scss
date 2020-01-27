@@ -1,6 +1,6 @@
 .rates-filter {
-  width: 233px;
   display: none;
+  width: 233px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,23 +15,23 @@
 .rates-filter__name {
   display: flex;
   align-items: center;
-  margin: 0;
-  padding-left: 4px;
-  width: 206px;
-  height: 59px;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.67;
+  width: 206px;
+  height: 59px;
   color: $dark-blue;
-  border: none;
   background-color: $white;
+  border: none;
+  margin: 0;
+  padding-left: 4px;
 
   @media (min-width: $tablet-width) {
     width: 139px;
     height: 45px;
     font-size: 14px;
-    padding-left: 11px;
     border: 2px solid $grey;
+    padding-left: 11px;
   }
 
   @media (min-width: $desktop-width) {

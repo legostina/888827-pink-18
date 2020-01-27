@@ -3,12 +3,12 @@
   top: 98px;
   left: 12%;
   width: 75%;
+  height: 2px;
   color: $black;
+  background: $black;
+  appearance: none;
   margin: 22px 0;
   order: 4;
-  appearance: none;
-  height: 2px;
-  background: $black;
 
   @media (min-width: $tablet-width) {
     position: unset;
@@ -24,10 +24,10 @@
 }
 
 .range-crop::-webkit-slider-thumb {
-  appearance: none;
   width: 14px;
   height: 14px;
   border: 2px solid $pink;
   border-radius: 20px;
   background: $white;
+  appearance: none;
 }

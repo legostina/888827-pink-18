@@ -4,33 +4,33 @@
   text-align: center;
   align-items: center;
   flex-direction: inherit;
-  padding: 34px 0;
   height: 37px;
+  padding: 34px 0;
 
   @media (min-width: $tablet-width) {
+    height: 63px;
     margin-right: 20px;
     padding: 45px 0;
-    height: 63px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     text-align: center;
     align-items: center;
-    padding: 0;
-    height: unset;
     flex-wrap: wrap;
     width: 160px;
+    height: unset;
     margin-right: 28px;
+    padding: 0;
   }
 }
 
 .copyright__link {
   display: flex;
-  font-size: 0;
-  background: url("../img/logo-htmlacademy.svg");
   width: 27px;
   height: 34px;
+  font-size: 0;
+  background: url("../img/logo-htmlacademy.svg");
 }
 
 .copyright__text {
