@@ -12,13 +12,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 110px;
     display: flex;
     position: absolute;
     align-items: center;
+    width: 100%;
+    min-height: 110px;
     background-color: rgba(0, 0, 0, 0.3);
     border: none;
-    width: 100%;
   }
 }
 

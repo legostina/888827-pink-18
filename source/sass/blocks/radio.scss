@@ -1,12 +1,7 @@
-.radio__list {
-  visibility: hidden;
-  display: none;
-}
-
 .radio__description {
+  position: relative;
   width: 215px;
   height: 37px;
-  position: relative;
   padding-left: 76px;
   padding-top: 6px;
 
@@ -35,6 +30,12 @@
     }
   }
 
+  &:focus {
+    &::before {
+      border: 1px solid $pink;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;
@@ -51,6 +52,19 @@
   @media (min-width: $tablet-width) {
     padding-left: 58px;
   }
+}
+
+.radio__list:focus + .radio__description::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 36px;
+  border-radius: 20px;
+  background-color: $white;
+  border: 1px solid $dark-blue;
 }
 
 .radio__list[type="radio"] + .radio__description::after {

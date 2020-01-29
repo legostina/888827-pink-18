@@ -1,4 +1,7 @@
 .item-description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 87.5%;
   min-height: 85px;
   background-color: $grey;
@@ -46,12 +49,12 @@
 }
 
 .item-description__name {
-  min-width: 20px;
-  margin: 0;
   flex-wrap: wrap;
-  float: left;
-  padding-right: 4px;
   font-weight: bold;
+  min-width: 20px;
+  float: left;
+  margin: 0;
+  padding-right: 4px;
   padding-left: 18px;
 
   @media (min-width: $tablet-width) {
@@ -85,29 +88,30 @@
 }
 
 .item-description__comment {
-  padding: 0 18px;
-  margin-top: 1px;
+  width: 80%;
+  min-height: 92px;
   line-height: 24px;
   font-weight: 300;
-  width: 80%;
-  overflow: hidden;
-  margin-bottom: 11px;
+  margin-bottom: 14px;
+  margin-top: -7px;
+  padding: 0 18px;
 
   @media (min-width: $tablet-width) {
     min-height: 44px;
     order: 4;
+    margin-bottom: 9px;
     padding: 0 28px;
-    margin-bottom: 16px;
   }
 }
 
 .item-description__comment--day {
-  padding: 0 18px;
-  margin-top: 1px;
-  font-weight: 300;
   width: 87%;
   min-height: 25px;
+  font-weight: 300;
   line-height: 24px;
+  margin-top: 1px;
+  margin-bottom: 14px;
+  padding: 0 18px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
@@ -116,13 +120,14 @@
     line-height: 22px;
     margin-bottom: 1px;
     min-height: 20px;
+    order: 4;
   }
 }
 
 .item-description__like {
   position: relative;
-  width: 88px;
-  height: 9px;
+  width: 100px;
+  height: 22px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 2;
@@ -137,13 +142,14 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 27px;
+    order: 5;
   }
 }
 
 .item-description__like--day {
   position: relative;
-  width: 88px;
-  height: 9px;
+  width: 100px;
+  height: 22px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 2;
@@ -155,8 +161,8 @@
   @media (min-width: $tablet-width) {
     width: 91px;
     height: 20px;
-    order: 3;
     padding-left: 46px;
+    order: 3;
   }
 
   @media (min-width: $desktop-width) {
@@ -168,11 +174,11 @@
   content: "";
   display: flex;
   position: absolute;
-  background: url("../img/icon-heart-svg.svg");
-  top: 2px;
+  top: 6px;
   left: 18px;
   width: 13px;
   height: 12px;
+  background: url("../img/icon-heart-svg.svg");
 
   @media (min-width: $tablet-width) {
     left: 255px;
@@ -187,11 +193,11 @@
   content: "";
   display: flex;
   position: absolute;
-  background: url("../img/icon-heart-svg.svg");
-  top: 2px;
+  top: 6px;
   left: 18px;
   width: 13px;
   height: 12px;
+  background: url("../img/icon-heart-svg.svg");
 
   @media (min-width: $tablet-width) {
     top: 6px;

@@ -18,10 +18,10 @@
 .contacts-input__field {
   width: 276px;
   height: 57px;
-  margin-top: 6px;
-  border-radius: 3px;
   font-size: 19px;
   border: 2px solid $border-input;
+  border-radius: 3px;
+  margin-top: 6px;
 
   @media (min-width: $tablet-width) {
     width: 79%;
@@ -48,12 +48,12 @@
   @media (min-width: $tablet-width) {
     display: block;
     font-size: 0;
-    height: 59px;
     width: 56px;
+    height: 59px;
     background: $border-input url("../img/phone-svg.svg") 16px 20px no-repeat;
     border: 2px solid $border-input;
-    order: 2;
     margin-top: 6px;
+    order: 2;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,12 +67,12 @@
   @media (min-width: $tablet-width) {
     display: block;
     font-size: 0;
-    height: 59px;
     width: 56px;
+    height: 59px;
     background: $border-input url("../img/mail-svg.svg") 17px 22px no-repeat;
     border: 2px solid $border-input;
-    order: 2;
     margin-top: 6px;
+    order: 2;
   }
 
   @media (min-width: $desktop-width) {

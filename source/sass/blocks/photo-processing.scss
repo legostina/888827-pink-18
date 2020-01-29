@@ -1,9 +1,9 @@
 .photo-processing {
   width: 100%;
+  max-width: 940px;
   padding-top: 20px;
   padding-bottom: 41px;
   background-color: $grey;
-  max-width: 940px;
 
   @media (min-width: $tablet-width) {
     padding-top: 57px;
@@ -28,18 +28,18 @@
 }
 
 .photo-processing__post {
+  position: relative;
   width: 87.5%;
-  border-radius: 50px;
-  background: none;
-  padding: 15px;
+  font-weight: bold;
   font-size: 18px;
   line-height: 1;
-  border: 3px solid $pink;
   color: $pink;
-  font-weight: bold;
+  background: none;
+  border-radius: 50px;
+  border: 3px solid $pink;
   margin-bottom: 13px;
   margin-top: 38px;
-  position: relative;
+  padding: 15px;
 
   &:hover {
     background-color: $pink;
@@ -67,13 +67,13 @@
 
 .photo-processing__cancel {
   width: 87.5%;
-  border-radius: 50px;
-  background: none;
-  padding: 15px;
   font-size: 18px;
   line-height: 1;
-  border: 3px solid $darkgrey;
   color: $darkgrey;
+  background: none;
+  border: 3px solid $darkgrey;
+  border-radius: 50px;
+  padding: 15px;
 
   &:hover {
     color: $dark-blue;

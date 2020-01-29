@@ -6,9 +6,9 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    display: flex;
     width: 95%;
     order: 5;
   }
@@ -22,14 +22,14 @@
 .bottom-form__send {
   width: 276px;
   height: 64px;
-  border: solid 2px $green;
-  background-color: $green;
-  color: $white;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
   text-align: center;
+  border: solid 2px $green;
+  background-color: $green;
+  color: $white;
 
   &:hover {
     background-color: $viridian;

@@ -1,26 +1,26 @@
 .product-download__info {
-  width: 100%;
-  height: 271px;
-  background-color: $down-blue;
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 271px;
+  background-color: $down-blue;
 
   @media (min-width: $tablet-width) {
     width: 300px;
     height: 271px;
     background: none;
     margin-top: -420px;
-    padding-bottom: 28px;
     margin-left: 3.03%;
+    padding-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -405px;
-    padding-bottom: 105px;
-    margin-left: 10.8%;
     height: 299px;
+    margin-top: -405px;
+    margin-left: 10.8%;
+    padding-bottom: 105px;
   }
 }

@@ -3,9 +3,9 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-top: 43px;
-  margin: 0 0 38px 0;
   border: none;
+  margin: 0 0 38px 0;
+  padding-top: 43px;
 
   @media (min-width: $tablet-width) {
     width: 91%;
@@ -28,23 +28,23 @@
 
 .emotions__title {
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
     width: 200px;
+    background-color: #ffffff;
   }
 }
 
 .emotions__description {
+  display: flex;
   width: 236px;
   height: 157px;
-  border: solid 2px $border-input;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.67;
   text-align: left;
-  padding: 14px 20px 26px 20px;
-  display: flex;
+  border: solid 2px $border-input;
   margin: 0 auto;
+  padding: 14px 20px 26px 20px;
 
   @media (min-width: $tablet-width) {
     width: 76%;
@@ -53,8 +53,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 19px;
     width: 85%;
     height: 92px;
+    margin-top: 19px;
   }
 }

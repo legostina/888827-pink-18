@@ -1,13 +1,13 @@
 .hit {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   align-items: center;
+  text-align: center;
+  width: 960px;
   height: 101px;
   color: $white;
-  text-align: center;
   margin-top: 20px;
-  width: 960px;
-  flex-direction: row;
 
   @media (min-width: $tablet-width) {
     width: 616px;
@@ -58,22 +58,22 @@
 
   &:nth-of-type(3) {
     position: relative;
+    width: 274px;
     background-image: url("../img/hit-ribbon.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     z-index: 1;
-    width: 274px;
 
     @media (min-width: $tablet-width) {
+      width: 218px;
       background-position: -9px 0;
       background-size: 43%;
-      width: 218px;
     }
 
     @media (min-width: $desktop-width) {
+      width: 230px;
       background-position: 0 0;
       background-size: unset;
-      width: 230px;
     }
   }
 
@@ -136,9 +136,9 @@
   position: absolute;
   top: 14px;
   left: 11px;
-  transform: rotate(-45deg);
-  text-transform: uppercase;
   font-weight: normal;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
 
   @media (min-width: $tablet-width) {
     top: 5px;

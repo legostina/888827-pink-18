@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" />
   <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link type="text/css" rel="stylesheet" href="css/style.min.css"/>
 </head>
 <body>
@@ -11,7 +13,7 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__top top-block">
-          <a class="top-block page-header__logo">
+          <a class="top-block page-header__logo" href="index.html">
             <picture>
               <source media="(min-width:960px)" srcset="img/logotype-white-desktop.svg">
               <source media="(min-width:660px)" srcset="img/logotype-white-tablet.svg">
@@ -43,8 +45,8 @@
 
     <main class="page-main">
 
-      <div class="contest--photo">
-        <h1 class="contest__title--photo">Фотографии пользователей</h1>
+      <div class="contest contest--photo">
+        <h1 class="contest__title contest__title--photo">Фотографии пользователей</h1>
       </div>
       <div class="attention">
         <p class="attention__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
@@ -257,6 +259,6 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/header.min.js"></script>
 </body>
 </html>

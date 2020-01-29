@@ -1,10 +1,10 @@
 .main-nav {
   position: relative;
+  top: 0;
   width: 100%;
   max-width: 1200px;
   min-height: 63px;
   margin: 0 auto;
-  top: 0;
   transition: all 0.3s;
 
   @media (min-width: $tablet-width) {
@@ -21,17 +21,17 @@
   background: $dark-blue;
 
   @media (min-width: $desktop-width) {
-    background: none;
-    width: 57%;
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
+    width: 57%;
+    background: none;
   }
 }
 
 .main-nav__list {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .main-nav__top {
@@ -48,14 +48,14 @@
 
 .main-nav__toggle {
   display: flex;
-  float: right;
-  width: 50px;
-  height: 24px;
-  background: none;
-  border: none;
   position: absolute;
   right: 5px;
   top: 24px;
+  width: 50px;
+  height: 24px;
+  float: right;
+  background: none;
+  border: none;
   outline: none;
 
   &::before {
@@ -102,14 +102,11 @@
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
-
   position: absolute;
   right: 20px;
   top: 0;
-
   width: 50px;
   height: 24px;
-
   background: url("../img/menu-burger-svg.svg") no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -143,12 +140,11 @@
 
   &::before {
     content: "";
-
     position: absolute;
     top: 24px;
     right: 0;
-    height: 24px;
     width: 28px;
+    height: 24px;
     background: url("../img/icon-menu-cross.svg") no-repeat;
   }
 

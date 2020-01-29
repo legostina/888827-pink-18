@@ -83,6 +83,12 @@
     }
   }
 
+  &:focus {
+    &::before {
+      border: 1px solid $pink;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;
@@ -102,9 +108,16 @@
   }
 }
 
-.trip__check {
-  visibility: hidden;
-  display: none;
+.trip__check:focus + .trip__done::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border: 1px solid $dark-blue;
 }
 
 .trip__check[type="checkbox"] + .trip__done::after {
