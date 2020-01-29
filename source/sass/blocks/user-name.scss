@@ -22,8 +22,19 @@
 .user-name__input {
   display: flex;
   flex-wrap: wrap;
-  width: 280px;
+  align-items: center;
   text-align: left;
-  height: 87px;
-  margin-bottom: 12px;
+  width: 280px;
+  height: 67px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 66px;
+    margin-bottom: 15px;
+  }
 }

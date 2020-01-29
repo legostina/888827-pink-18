@@ -24,7 +24,7 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    margin-right: 19px;
+    margin-right: 8px;
     padding: 0;
   }
 }
@@ -32,6 +32,7 @@
 .social__item {
   border: 3px solid $grey;
   border-radius: 50px;
+  margin-right: 11px;
 
   &:hover {
     border-color: $dark-blue;
@@ -47,11 +48,6 @@
   width: 46px;
   height: 46px;
   font-size: 0;
-}
-
-.social__item:first-of-type,
-.social__item:nth-last-of-type(2) {
-  margin-right: 11px;
 }
 
 .social__link.social__link--twitter {

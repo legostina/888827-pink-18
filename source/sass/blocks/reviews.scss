@@ -5,14 +5,15 @@
   align-items: center;
   font-family: "OpenSans", "Arial", sans-serif;
   position: relative;
-  height: 377px;
+  min-height: 377px;
 
   @media (min-width: $tablet-width) {
-    height: 402px;
+    min-height: 402px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 495px;
+    min-height: 433px;
+    padding-top: 62px;
   }
 }
 

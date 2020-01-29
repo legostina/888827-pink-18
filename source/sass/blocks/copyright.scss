@@ -31,6 +31,14 @@
   background: url("../img/logo-htmlacademy.svg");
   width: 27px;
   height: 34px;
+
+  &:hover {
+    background: url("../img/logo-htmlacademy-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {

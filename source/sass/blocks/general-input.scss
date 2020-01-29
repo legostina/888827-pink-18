@@ -1,11 +1,17 @@
 .general-input {
   @media (min-width: $tablet-width) {
+    width: 95%;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
     width: 98%;
+    padding-bottom: 37px;
   }
 }
 
 .general-input__label {
-  width: 135px;
   height: 28px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
@@ -13,12 +19,18 @@
   text-align: left;
   color: $pink;
   text-transform: uppercase;
+  white-space: nowrap;
   padding-left: 22px;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    width: 96%;
+    padding-left: 3px;
+    margin-bottom: unset;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-left: 13px;
   }
 }
@@ -26,8 +38,8 @@
 .general-input__field {
   width: 276px;
   height: 55px;
-  margin-top: 6px;
-  margin-left: -22px;
+  margin-top: 0;
+  margin-left: 0;
   border-radius: 3px;
   font-size: 19px;
   border: 2px solid $border-input;
@@ -46,7 +58,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 58px;
+    height: 57px;
+    margin-top: 0;
   }
 }
 

@@ -44,6 +44,10 @@
   object-fit: contain;
   margin-left: 20px;
 
+  &:hover {
+    fill: $pink;
+  }
+
   @media (min-width: $tablet-width) {
     width: 147px;
     height: 40px;
